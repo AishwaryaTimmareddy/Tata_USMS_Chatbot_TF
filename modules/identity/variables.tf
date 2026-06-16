@@ -1,0 +1,10 @@
+variable "location" { type = string }
+variable "resource_group_name" { type = string }
+variable "resource_group_ids" { type = map(string) }
+variable "admin_object_ids" { type = set(string) }
+variable "contributor_object_ids" { type = set(string) }
+variable "reader_object_ids" { type = set(string) }
+variable "create_bootstrap_users" { type = bool }
+variable "bootstrap_admin_upn" { type = string }
+variable "bootstrap_test_upn" { type = string }
+variable "tags" { type = map(string) }
