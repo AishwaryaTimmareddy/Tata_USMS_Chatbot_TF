@@ -173,6 +173,12 @@ variable "chat_model_version" {
   default = "2025-04-14"
 }
 
+variable "chat_deployment_capacity" {
+  description = "Azure OpenAI deployment capacity units for the chat model. Increase only within approved quota."
+  type        = number
+  default     = 10
+}
+
 variable "embedding_model_name" {
   type    = string
   default = "text-embedding-3-large"
@@ -181,4 +187,10 @@ variable "embedding_model_name" {
 variable "embedding_model_version" {
   type    = string
   default = "1"
+}
+
+variable "embedding_deployment_capacity" {
+  description = "Azure OpenAI deployment capacity units for the embedding model. Increase only within approved quota."
+  type        = number
+  default     = 10
 }

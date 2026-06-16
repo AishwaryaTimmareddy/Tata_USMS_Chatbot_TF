@@ -12,6 +12,8 @@ variable "chat_model_name" { type = string }
 variable "chat_model_version" { type = string }
 variable "embedding_model_name" { type = string }
 variable "embedding_model_version" { type = string }
+variable "chat_deployment_capacity" { type = number }
+variable "embedding_deployment_capacity" { type = number }
 variable "embedding_dimensions" {
   type    = number
   default = 3072

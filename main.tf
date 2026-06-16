@@ -65,8 +65,10 @@ module "ai" {
   function_identity_principal_id       = module.identity.function_identity_principal_id
   chat_model_name                      = var.chat_model_name
   chat_model_version                   = var.chat_model_version
+  chat_deployment_capacity             = var.chat_deployment_capacity
   embedding_model_name                 = var.embedding_model_name
   embedding_model_version              = var.embedding_model_version
+  embedding_deployment_capacity        = var.embedding_deployment_capacity
   search_public_network_access_enabled = var.search_public_network_access_enabled
   openai_public_network_access_enabled = var.openai_public_network_access_enabled
   admin_public_ip_ranges               = var.admin_public_ip_ranges

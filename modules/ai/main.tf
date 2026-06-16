@@ -43,7 +43,7 @@ resource "azurerm_cognitive_deployment" "chat" {
   }
   sku {
     name     = "Standard"
-    capacity = 1
+    capacity = var.chat_deployment_capacity
   }
 }
 
@@ -57,7 +57,7 @@ resource "azurerm_cognitive_deployment" "embedding" {
   }
   sku {
     name     = "Standard"
-    capacity = 1
+    capacity = var.embedding_deployment_capacity
   }
 }
 
@@ -217,8 +217,8 @@ locals {
         context             = "/document"
         defaultLanguageCode = "en"
         textSplitMode       = "pages"
-        maximumPageLength   = 2000
-        pageOverlapLength   = 200
+        maximumPageLength   = 3500
+        pageOverlapLength   = 100
         maximumPagesToTake  = 0
         inputs = [
           {
@@ -278,14 +278,6 @@ locals {
             {
               name   = "source"
               source = "/document/metadata_storage_path"
-            },
-            {
-              name   = "category"
-              source = "/document/metadata_category"
-            },
-            {
-              name   = "isApproved"
-              source = "/document/metadata_approved"
             }
           ]
         }
@@ -303,7 +295,7 @@ locals {
     targetIndexName = local.search_index_name
     skillsetName    = local.search_skillset_name
     parameters = {
-      batchSize = 5
+      batchSize = 1
       configuration = {
         dataToExtract                = "contentAndMetadata"
         parsingMode                  = "default"
