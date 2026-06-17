@@ -8,6 +8,13 @@ resource "azurerm_container_registry" "this" {
   tags                          = var.tags
 }
 
+locals {
+  app_service_admin_ip_ranges = [
+    for ip_range in var.admin_public_ip_ranges :
+    length(regexall("/", ip_range)) > 0 ? ip_range : "${ip_range}/32"
+  ]
+}
+
 resource "azurerm_service_plan" "app" {
   name                   = "asp-aichatbot-prod-cin-001"
   resource_group_name    = var.workload_resource_group_name
@@ -24,7 +31,7 @@ resource "azurerm_linux_web_app" "this" {
   location                        = var.location
   service_plan_id                 = azurerm_service_plan.app.id
   virtual_network_subnet_id       = var.app_subnet_id
-  public_network_access_enabled   = var.app_public_network_access_enabled
+  public_network_access_enabled   = var.app_public_network_access_enabled || length(var.admin_public_ip_ranges) > 0
   https_only                      = true
   key_vault_reference_identity_id = var.app_identity_id
   tags                            = var.tags
@@ -38,12 +45,22 @@ resource "azurerm_linux_web_app" "this" {
     always_on                                     = true
     ftps_state                                    = "Disabled"
     minimum_tls_version                           = "1.2"
+    scm_use_main_ip_restriction                   = true
     vnet_route_all_enabled                        = true
     container_registry_use_managed_identity       = true
     container_registry_managed_identity_client_id = var.app_identity_client_id
     application_stack {
       docker_image_name   = var.container_image
       docker_registry_url = "https://${azurerm_container_registry.this.login_server}"
+    }
+    dynamic "ip_restriction" {
+      for_each = local.app_service_admin_ip_ranges
+      content {
+        name       = "admin-${ip_restriction.key + 1}"
+        priority   = 100 + ip_restriction.key
+        action     = "Allow"
+        ip_address = ip_restriction.value
+      }
     }
   }
 
@@ -55,6 +72,7 @@ resource "azurerm_linux_web_app" "this" {
     AZURE_OPENAI_ENDPOINT                 = var.openai_endpoint
     AZURE_OPENAI_CHAT_DEPLOYMENT          = "chat"
     AZURE_OPENAI_EMBEDDING_DEPLOYMENT     = "embedding"
+    AZURE_CONTENT_SAFETY_ENDPOINT         = var.content_safety_endpoint
     AZURE_SEARCH_ENDPOINT                 = var.search_endpoint
     AZURE_SEARCH_INDEX_NAME               = "usms-knowledge-index"
     AZURE_SEARCH_INDEXER_NAME             = "usms-knowledge-indexer"
@@ -70,6 +88,10 @@ resource "azurerm_linux_web_app" "this" {
     BOOTSTRAP_ADMIN_EMAIL                 = "aichatbot-admin@usmssaffron.onmicrosoft.com"
     BOOTSTRAP_ADMIN_PASSWORD              = "@Microsoft.KeyVault(SecretUri=${var.key_vault_uri}secrets/app-bootstrap-admin-password)"
     APPLICATIONINSIGHTS_CONNECTION_STRING = var.application_insights_connection_string
+  }
+
+  lifecycle {
+    ignore_changes = [tags["hidden-link: /app-insights-resource-id"]]
   }
 }
 
@@ -186,6 +208,10 @@ resource "azurerm_application_gateway" "this" {
   resource_group_name = var.network_resource_group_name
   location            = var.location
   tags                = var.tags
+  identity {
+    type         = "UserAssigned"
+    identity_ids = [var.app_identity_id]
+  }
   sku {
     name     = "Standard_v2"
     tier     = "Standard_v2"

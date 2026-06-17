@@ -5,7 +5,8 @@ resource "azurerm_search_service" "this" {
   sku                           = "standard"
   replica_count                 = 2
   partition_count               = 1
-  public_network_access_enabled = var.search_public_network_access_enabled
+  public_network_access_enabled = var.search_public_network_access_enabled || length(var.admin_public_ip_ranges) > 0
+  allowed_ips                   = var.search_public_network_access_enabled ? [] : var.admin_public_ip_ranges
   local_authentication_enabled  = true
   authentication_failure_mode   = "http401WithBearerChallenge"
   semantic_search_sku           = "standard"
@@ -28,8 +29,22 @@ resource "azurerm_cognitive_account" "openai" {
     type = "SystemAssigned"
   }
   network_acls {
+    bypass         = "AzureServices"
     default_action = var.openai_public_network_access_enabled ? "Allow" : "Deny"
     ip_rules       = var.openai_public_network_access_enabled ? [] : var.admin_public_ip_ranges
+  }
+}
+
+resource "azapi_resource" "search_openai_shared_private_link" {
+  type      = "Microsoft.Search/searchServices/sharedPrivateLinkResources@2024-03-01-preview"
+  name      = "spl-openai"
+  parent_id = azurerm_search_service.this.id
+  body = {
+    properties = {
+      groupId               = "openai_account"
+      privateLinkResourceId = azurerm_cognitive_account.openai.id
+      requestMessage        = "Allow Azure AI Search indexer to call Azure OpenAI embedding skill privately."
+    }
   }
 }
 
@@ -58,6 +73,24 @@ resource "azurerm_cognitive_deployment" "embedding" {
   sku {
     name     = "Standard"
     capacity = var.embedding_deployment_capacity
+  }
+}
+
+resource "azurerm_cognitive_account" "content_safety" {
+  name                          = "cs-aichatbot-prod-cin-001"
+  location                      = var.openai_location
+  resource_group_name           = var.workload_resource_group_name
+  kind                          = "ContentSafety"
+  sku_name                      = "S0"
+  custom_subdomain_name         = "cs-aichatbot-prod-cin-001"
+  public_network_access_enabled = length(var.admin_public_ip_ranges) > 0
+  tags                          = var.tags
+  identity {
+    type = "SystemAssigned"
+  }
+  network_acls {
+    default_action = "Deny"
+    ip_rules       = var.admin_public_ip_ranges
   }
 }
 
@@ -204,6 +237,9 @@ locals {
     container = {
       name = "knowledge"
     }
+    dataDeletionDetectionPolicy = {
+      "@odata.type" = "#Microsoft.Azure.Search.NativeBlobSoftDeleteDeletionDetectionPolicy"
+    }
   }
 
   search_skillset_body = {
@@ -337,6 +373,7 @@ locals {
 }
 
 resource "terraform_data" "search_index" {
+  count            = var.manage_search_data_plane ? 1 : 0
   triggers_replace = [sha256(jsonencode(local.search_index_body))]
 
   provisioner "local-exec" {
@@ -358,6 +395,7 @@ resource "terraform_data" "search_index" {
 }
 
 resource "terraform_data" "search_data_source" {
+  count            = 1
   triggers_replace = [sha256(jsonencode(local.search_data_source_body))]
 
   provisioner "local-exec" {
@@ -379,6 +417,7 @@ resource "terraform_data" "search_data_source" {
 }
 
 resource "terraform_data" "search_skillset" {
+  count            = var.manage_search_data_plane ? 1 : 0
   triggers_replace = [sha256(jsonencode(local.search_skillset_body))]
 
   provisioner "local-exec" {
@@ -404,6 +443,7 @@ resource "terraform_data" "search_skillset" {
 }
 
 resource "terraform_data" "search_indexer" {
+  count            = var.manage_search_data_plane ? 1 : 0
   triggers_replace = [sha256(jsonencode(local.search_indexer_body))]
 
   provisioner "local-exec" {
@@ -470,15 +510,18 @@ resource "azapi_resource" "foundry_project" {
 
 locals {
   endpoints = {
-    search  = { id = azurerm_search_service.this.id, service = "searchService", dns = "search" }
-    openai  = { id = azurerm_cognitive_account.openai.id, service = "account", dns = "openai" }
-    foundry = { id = azapi_resource.foundry.id, service = "account", dns = "cognitive" }
+    search         = { id = azurerm_search_service.this.id, service = "searchService", dns = "search" }
+    openai         = { id = azurerm_cognitive_account.openai.id, service = "account", dns = "openai" }
+    content_safety = { id = azurerm_cognitive_account.content_safety.id, service = "account", dns = "cognitive" }
+    foundry        = { id = azapi_resource.foundry.id, service = "account", dns = "cognitive" }
   }
   roles = {
     app_search         = { scope = azurerm_search_service.this.id, role = "Search Index Data Reader", principal = var.app_identity_principal_id }
+    app_search_writer  = { scope = azurerm_search_service.this.id, role = "Search Index Data Contributor", principal = var.app_identity_principal_id }
     app_search_service = { scope = azurerm_search_service.this.id, role = "Search Service Contributor", principal = var.app_identity_principal_id }
     function_search    = { scope = azurerm_search_service.this.id, role = "Search Service Contributor", principal = var.function_identity_principal_id }
     app_openai         = { scope = azurerm_cognitive_account.openai.id, role = "Cognitive Services OpenAI User", principal = var.app_identity_principal_id }
+    app_content_safety = { scope = azurerm_cognitive_account.content_safety.id, role = "Cognitive Services User", principal = var.app_identity_principal_id }
     search_blob        = { scope = var.document_storage_account_id, role = "Storage Blob Data Reader", principal = azurerm_search_service.this.identity[0].principal_id }
     search_openai      = { scope = azurerm_cognitive_account.openai.id, role = "Cognitive Services OpenAI User", principal = azurerm_search_service.this.identity[0].principal_id }
   }

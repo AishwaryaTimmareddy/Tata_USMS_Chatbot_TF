@@ -1,0 +1,218 @@
+2026-06-15T13:49:45.6450621+00:00 ContainerStatus: State: Stopping, Action: UnmountingVolumes, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Site container: app-aichatbot-prod-cin-001 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-15T13:49:45.7222453+00:00 ContainerStatus: State: Stopping, Action: StoppingSiteNetworks, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Site container: app-aichatbot-prod-cin-001 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-15T13:49:45.8406388+00:00 ContainerStatus: Site: app-aichatbot-prod-cin-001 will be blocked for 2 minutes till 06/15/2026 13:51:45
+2026-06-15T13:49:45.8408095+00:00 ContainerStatus: State: Blocked, Action: StoppingSiteNetworks, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Site: app-aichatbot-prod-cin-001 will be blocked for 2 minutes till 06/15/2026 13:51:45, DetailsLevel: WARN
+2026-06-15T13:49:45.8412770+00:00 ContainerStatus: State: Stopped, Action: None, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Site stopped at 06/15/2026 13:49:45 (UTC), DetailsLevel: WARN
+2026-06-15T13:49:45.9490616+00:00 ContainerStatus: State: Stopped, Action: None, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Site stopped at 06/15/2026 13:49:45 (UTC), DetailsLevel: WARN
+2026-06-15T13:50:10.0241898+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/15/2026 13:51:45, DetailsLevel: WARN
+2026-06-15T13:50:10.0242214+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-06-15T13:50:11.1325251+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/15/2026 13:51:45, DetailsLevel: WARN
+2026-06-15T13:50:11.1325672+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-06-15T13:50:40.0226611+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/15/2026 13:51:45, DetailsLevel: WARN
+2026-06-15T13:50:40.0226911+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-06-15T13:50:41.1346902+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/15/2026 13:51:45, DetailsLevel: WARN
+2026-06-15T13:50:41.1347191+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-06-15T13:51:10.0432241+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/15/2026 13:51:45, DetailsLevel: WARN
+2026-06-15T13:51:10.0432580+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-06-15T13:51:11.1367320+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/15/2026 13:51:45, DetailsLevel: WARN
+2026-06-15T13:51:11.1368224+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-06-15T13:51:40.0224076+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/15/2026 13:51:45, DetailsLevel: WARN
+2026-06-15T13:51:40.0224372+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-06-15T13:51:41.1396687+00:00 ContainerStatus: State: Blocked, Action: None, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/15/2026 13:51:45, DetailsLevel: WARN
+2026-06-15T13:51:41.1397007+00:00 ContainerStatus: Start site prohibitted because the site is being blocked.
+2026-06-15T13:51:45.8389030+00:00 ContainerStatus: Site: app-aichatbot-prod-cin-001 is unblocked.
+2026-06-15T13:52:10.0628242+00:00 ContainerStatus: State: Starting, Action: EstablishingSiteNetworks, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/15/2026 13:51:45, DetailsLevel: WARN
+2026-06-15T13:52:11.1465009+00:00 ContainerStatus: State: Starting, Action: StartingMsiContainer, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/15/2026 13:51:45, DetailsLevel: WARN
+2026-06-15T13:52:14.0234669+00:00 ContainerStatus: State: Starting, Action: StartingSiteContainers, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 06/15/2026 13:51:45, DetailsLevel: WARN
+2026-06-15T13:52:14.0236281+00:00 ContainerStatus: Container start method called.
+2026-06-15T13:52:14.0236689+00:00 ContainerStatus: State: Starting, Action: PullingImage, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Pulling image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-15T13:52:14.0237926+00:00 ContainerStatus: Establishing network.
+2026-06-15T13:52:14.0239488+00:00 ContainerStatus: Pulling image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0.
+2026-06-15T13:52:22.9373214+00:00 ContainerStatus: Image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 is pulled from registry acraichatbotprodcin001.azurecr.io
+2026-06-15T13:52:22.9374745+00:00 ContainerStatus: Container is starting.
+2026-06-15T13:52:22.9395231+00:00 ContainerStatus: State: Starting, Action: MountingVolumes, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Mounting volumes for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-15T13:52:22.9396998+00:00 ContainerStatus: Establishing user namespace if not established already.
+2026-06-15T13:52:22.9398314+00:00 ContainerStatus: Establishing network if not established already.
+2026-06-15T13:52:22.9400515+00:00 ContainerStatus: Mounting volumes.
+2026-06-15T13:52:22.9402222+00:00 ContainerStatus: Nested mountpoint 
+2026-06-15T13:52:22.9585142+00:00 ContainerStatus: Nested mountpoint volatile/logs
+2026-06-15T13:52:22.9662682+00:00 ContainerStatus: Nested mountpoint 
+2026-06-15T13:52:22.9949770+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Finished pulling container image and mounting volumes for app-aichatbot-prod-cin-001. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-15T13:52:22.9951209+00:00 ContainerStatus: Creating container.
+2026-06-15T13:52:22.9952348+00:00 ContainerStatus: Creating pipes for streaming container io.
+2026-06-15T13:52:22.9953564+00:00 ContainerStatus: Creating stdout named pipe at /podr/container/pipe/c33919811a8c_app-aichatbot-prod-cin-001/stdout_ad4244dad74a414baf0fa8c7cda0c467.
+2026-06-15T13:52:22.9987669+00:00 ContainerStatus: Successfully created stdout named pipe at: /podr/container/pipe/c33919811a8c_app-aichatbot-prod-cin-001/stdout_ad4244dad74a414baf0fa8c7cda0c467.
+2026-06-15T13:52:23.0034500+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/c33919811a8c_app-aichatbot-prod-cin-001/stdout_ad4244dad74a414baf0fa8c7cda0c467 for reading in non-blocking mode.
+2026-06-15T13:52:23.0043256+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/c33919811a8c_app-aichatbot-prod-cin-001/stdout_ad4244dad74a414baf0fa8c7cda0c467.
+2026-06-15T13:52:23.0059392+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/c33919811a8c_app-aichatbot-prod-cin-001/stdout_ad4244dad74a414baf0fa8c7cda0c467.
+2026-06-15T13:52:23.0067040+00:00 ContainerStatus: Creating stderr named pipe at /podr/container/pipe/c33919811a8c_app-aichatbot-prod-cin-001/stderr_d2b6484d1b1c4abbacd481a9a9802d72.
+2026-06-15T13:52:23.0070844+00:00 ContainerStatus: Successfully created stderr named pipe at: /podr/container/pipe/c33919811a8c_app-aichatbot-prod-cin-001/stderr_d2b6484d1b1c4abbacd481a9a9802d72.
+2026-06-15T13:52:23.0074593+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/c33919811a8c_app-aichatbot-prod-cin-001/stderr_d2b6484d1b1c4abbacd481a9a9802d72 for reading in non-blocking mode.
+2026-06-15T13:52:23.0079013+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/c33919811a8c_app-aichatbot-prod-cin-001/stderr_d2b6484d1b1c4abbacd481a9a9802d72.
+2026-06-15T13:52:23.0082590+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/c33919811a8c_app-aichatbot-prod-cin-001/stderr_d2b6484d1b1c4abbacd481a9a9802d72.
+2026-06-15T13:52:23.0091711+00:00 ContainerStatus: Overriding PORT environment variable with pre-calculated port: 8000.
+2026-06-15T13:52:23.0095175+00:00 ContainerStatus: Setting value of PORT variable to 8000
+2026-06-15T13:52:23.0102568+00:00 ContainerStatus: Creating container with image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 from registry: acraichatbotprodcin001.azurecr.io and fully qualified image name: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0
+2026-06-15T13:52:23.2104609+00:00 ContainerStatus: Starting container: c33919811a8c_app-aichatbot-prod-cin-001.
+2026-06-15T13:52:23.2272715+00:00 ContainerStatus: Starting watchers and probes.
+2026-06-15T13:52:23.2279385+00:00 ContainerStatus: Starting metrics collection.
+2026-06-15T13:52:23.2281537+00:00 ContainerStatus: Container is running.
+2026-06-15T13:52:23.2282243+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-15T13:52:23.2465139+00:00 ContainerStatus: Container start method finished after 9222 ms.
+2026-06-15T13:52:23.2467585+00:00 ContainerStatus: State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-15T13:52:23.2467959+00:00 ContainerStatus: State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-15T13:52:25.5048397+00:00 ContainerStream: INFO:     Started server process [1]
+2026-06-15T13:52:25.5048827+00:00 ContainerStream: INFO:     Waiting for application startup.
+2026-06-15T13:52:25.5059603+00:00 ContainerStream: INFO:     Application startup complete.
+2026-06-15T13:52:25.5105727+00:00 ContainerStream: INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-06-15T13:52:26.2845617+00:00 ContainerStream: INFO:     169.254.130.1:12353 - "GET /robots933456.txt HTTP/1.1" 404 Not Found
+2026-06-15T13:52:26.2859354+00:00 ContainerStatus: Site startup probe succeeded after 3.0387606 seconds.
+2026-06-15T13:52:26.3441279+00:00 ContainerStatus: State: Starting, Action: WarmUpProbeSucceeded, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Site startup probe succeeded after 3.0387606 seconds., DetailsLevel: INFO
+2026-06-15T13:52:26.4519990+00:00 ContainerStatus: Site started.
+2026-06-15T13:52:26.4524957+00:00 ContainerStatus: State: Started, Action: None, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Site started at 06/15/2026 13:52:26 (UTC), DetailsLevel: INFO
+========== New Cold Start Attempt (2026-06-15T13:52:26.5369524+00:00) ==========
+2026-06-15T13:52:26.5369524+00:00 ContainerStream: INFO:     169.254.130.1:12361 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:52:26.5376045+00:00 ContainerStream: INFO:     169.254.130.1:12371 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:52:40.0223386+00:00 ContainerStream: INFO:     169.254.130.1:37045 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:52:41.1406073+00:00 ContainerStream: INFO:     169.254.130.1:37045 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:53:10.0257395+00:00 ContainerStream: INFO:     169.254.130.1:15807 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:53:11.1359049+00:00 ContainerStream: INFO:     169.254.130.1:15807 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:53:40.0270539+00:00 ContainerStream: INFO:     169.254.130.1:16837 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:53:41.1419641+00:00 ContainerStream: INFO:     169.254.130.1:16837 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:54:10.0250047+00:00 ContainerStream: INFO:     169.254.130.1:24197 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:54:11.1403613+00:00 ContainerStream: INFO:     169.254.130.1:24197 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:54:40.0289073+00:00 ContainerStream: INFO:     169.254.130.1:13157 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:54:41.1478032+00:00 ContainerStream: INFO:     169.254.130.1:13157 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:55:04.5376920+00:00 ContainerStream: INFO:     169.254.130.1:59889 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:55:10.0291063+00:00 ContainerStream: INFO:     169.254.130.1:57545 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:55:11.1429559+00:00 ContainerStream: INFO:     169.254.130.1:57545 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:55:40.0340936+00:00 ContainerStream: INFO:     169.254.130.1:36735 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:55:41.1469666+00:00 ContainerStream: INFO:     169.254.130.1:36735 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:56:10.0361634+00:00 ContainerStream: INFO:     169.254.130.1:53199 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:56:11.1439883+00:00 ContainerStream: INFO:     169.254.130.1:53199 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:56:40.0453644+00:00 ContainerStream: INFO:     169.254.130.1:36049 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:56:41.1468912+00:00 ContainerStream: INFO:     169.254.130.1:36049 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:57:10.0437782+00:00 ContainerStream: INFO:     169.254.130.1:53977 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:57:11.1488316+00:00 ContainerStream: INFO:     169.254.130.1:53977 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:57:40.0508873+00:00 ContainerStream: INFO:     169.254.130.1:37421 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:57:41.1514012+00:00 ContainerStream: INFO:     169.254.130.1:37421 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:58:10.0438869+00:00 ContainerStream: INFO:     169.254.130.1:40311 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:58:11.1636739+00:00 ContainerStream: INFO:     169.254.130.1:40311 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:58:40.0527743+00:00 ContainerStream: INFO:     169.254.130.1:57919 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:58:41.1609134+00:00 ContainerStream: INFO:     169.254.130.1:57919 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:58:48.7809975+00:00 ContainerStatus: State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-15T13:58:49.9975416+00:00 ContainerStatus: State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-15T13:58:54.9864973+00:00 ContainerStatus: State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-15T13:58:54.9867824+00:00 ContainerStatus: Container start method called.
+2026-06-15T13:58:54.9868344+00:00 ContainerStatus: State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-15T13:58:54.9869522+00:00 ContainerStatus: Establishing network.
+2026-06-15T13:58:54.9871237+00:00 ContainerStatus: Pulling image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0.
+2026-06-15T13:58:57.4281782+00:00 ContainerStatus: Container is starting.
+2026-06-15T13:58:57.4287142+00:00 ContainerStatus: State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-15T13:58:57.4289659+00:00 ContainerStatus: Establishing user namespace if not established already.
+2026-06-15T13:58:57.4292778+00:00 ContainerStatus: Establishing network if not established already.
+2026-06-15T13:58:57.4295287+00:00 ContainerStatus: Mounting volumes.
+2026-06-15T13:58:57.4297833+00:00 ContainerStatus: Nested mountpoint 
+2026-06-15T13:58:57.4318640+00:00 ContainerStatus: Nested mountpoint volatile/logs
+2026-06-15T13:58:57.4424427+00:00 ContainerStatus: Nested mountpoint 
+2026-06-15T13:58:57.4930026+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for app-aichatbot-prod-cin-001. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-15T13:58:57.4931479+00:00 ContainerStatus: Creating container.
+2026-06-15T13:58:57.4932818+00:00 ContainerStatus: Creating pipes for streaming container io.
+2026-06-15T13:58:57.4934115+00:00 ContainerStatus: Creating stdout named pipe at /podr/container/pipe/885f8bdfe801_app-aichatbot-prod-cin-001/stdout_a90efb0ecf0b4334a63b0f0d96a2926b.
+2026-06-15T13:58:57.4936478+00:00 ContainerStatus: Successfully created stdout named pipe at: /podr/container/pipe/885f8bdfe801_app-aichatbot-prod-cin-001/stdout_a90efb0ecf0b4334a63b0f0d96a2926b.
+2026-06-15T13:58:57.4937620+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/885f8bdfe801_app-aichatbot-prod-cin-001/stdout_a90efb0ecf0b4334a63b0f0d96a2926b for reading in non-blocking mode.
+2026-06-15T13:58:57.4939002+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/885f8bdfe801_app-aichatbot-prod-cin-001/stdout_a90efb0ecf0b4334a63b0f0d96a2926b.
+2026-06-15T13:58:57.4940154+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/885f8bdfe801_app-aichatbot-prod-cin-001/stdout_a90efb0ecf0b4334a63b0f0d96a2926b.
+2026-06-15T13:58:57.5070903+00:00 ContainerStatus: Creating stderr named pipe at /podr/container/pipe/885f8bdfe801_app-aichatbot-prod-cin-001/stderr_815349d6844c406688f82c28fa86b4fa.
+2026-06-15T13:58:57.5073192+00:00 ContainerStatus: Successfully created stderr named pipe at: /podr/container/pipe/885f8bdfe801_app-aichatbot-prod-cin-001/stderr_815349d6844c406688f82c28fa86b4fa.
+2026-06-15T13:58:57.5074599+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/885f8bdfe801_app-aichatbot-prod-cin-001/stderr_815349d6844c406688f82c28fa86b4fa for reading in non-blocking mode.
+2026-06-15T13:58:57.5076110+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/885f8bdfe801_app-aichatbot-prod-cin-001/stderr_815349d6844c406688f82c28fa86b4fa.
+2026-06-15T13:58:57.5077601+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/885f8bdfe801_app-aichatbot-prod-cin-001/stderr_815349d6844c406688f82c28fa86b4fa.
+2026-06-15T13:58:57.5119179+00:00 ContainerStatus: Overriding PORT environment variable with pre-calculated port: 8000.
+2026-06-15T13:58:57.5143852+00:00 ContainerStatus: Setting value of PORT variable to 8000
+2026-06-15T13:58:57.5162472+00:00 ContainerStatus: Creating container with image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 from registry: acraichatbotprodcin001.azurecr.io and fully qualified image name: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0
+2026-06-15T13:58:57.7574427+00:00 ContainerStatus: Starting container: 885f8bdfe801_app-aichatbot-prod-cin-001.
+2026-06-15T13:58:57.7787666+00:00 ContainerStatus: Starting watchers and probes.
+2026-06-15T13:58:57.7789712+00:00 ContainerStatus: Starting metrics collection.
+2026-06-15T13:58:57.7795941+00:00 ContainerStatus: Container is running.
+2026-06-15T13:58:57.7797163+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-15T13:58:57.8027555+00:00 ContainerStatus: Container start method finished after 2815 ms.
+2026-06-15T13:58:57.8031147+00:00 ContainerStatus: State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-15T13:58:57.8031381+00:00 ContainerStatus: State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-15T13:59:00.3981536+00:00 ContainerStream: INFO:     Started server process [1]
+2026-06-15T13:59:00.3990725+00:00 ContainerStream: INFO:     Waiting for application startup.
+2026-06-15T13:59:00.3990916+00:00 ContainerStream: INFO:     Application startup complete.
+2026-06-15T13:59:00.3996302+00:00 ContainerStream: INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-06-15T13:59:00.8432712+00:00 ContainerStream: INFO:     169.254.130.1:12505 - "GET /robots933456.txt HTTP/1.1" 404 Not Found
+2026-06-15T13:59:00.8471540+00:00 ContainerStatus: Site startup probe succeeded after 3.041774 seconds.
+2026-06-15T13:59:00.9274672+00:00 ContainerStatus: State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 3.041774 seconds., DetailsLevel: INFO
+2026-06-15T13:59:01.3548432+00:00 ContainerStatus: Site started.
+2026-06-15T13:59:01.3549574+00:00 ContainerStatus: State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 06/15/2026 13:59:01 (UTC), DetailsLevel: INFO
+========== New Cold Start Attempt (2026-06-15T13:59:10.0550959+00:00) ==========
+2026-06-15T13:59:10.0550959+00:00 ContainerStream: INFO:     169.254.130.1:33089 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:59:11.1655481+00:00 ContainerStream: INFO:     169.254.130.1:33089 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:59:21.4408275+00:00 ContainerStatus: State: Stopping, Action: StoppingSite, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Site started at 06/15/2026 13:52:26 (UTC), DetailsLevel: INFO
+2026-06-15T13:59:21.4410816+00:00 ContainerStatus: State: Stopping, Action: StoppingSiteContainers, LastError: ImageNotFoundFailure, LastErrorTimestamp: 06/15/2026 13:49:45, LastErrorDetails: Failed to pull image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0. Image pull failed because the image was not found. Check the registry to ensure the image is present or check for any misspellings., Details: Site started at 06/15/2026 13:52:26 (UTC), DetailsLevel: INFO
+2026-06-15T13:59:21.4412446+00:00 ContainerStatus: Container is terminating. Grace period: 5 seconds.
+2026-06-15T13:59:21.4453490+00:00 ContainerStatus: Stop and delete container. Retry count = 0
+2026-06-15T13:59:21.4464359+00:00 ContainerStatus: Stopping container: c33919811a8c_app-aichatbot-prod-cin-001.
+2026-06-15T13:59:21.6191103+00:00 ContainerStream: [Previous Container] INFO:     Waiting for application shutdown.
+2026-06-15T13:59:21.6192883+00:00 ContainerStream: [Previous Container] INFO:     Application shutdown complete.
+2026-06-15T13:59:21.6193557+00:00 ContainerStream: [Previous Container] INFO:     Finished server process [1]
+2026-06-15T13:59:23.0728026+00:00 ContainerStatus: Deleting container: c33919811a8c_app-aichatbot-prod-cin-001. Retry count = 0
+2026-06-15T13:59:23.1372806+00:00 ContainerStatus: Container spec TerminationMessagePolicy  path 
+2026-06-15T13:59:23.1374421+00:00 ContainerStatus: Container is terminated. Total time elapsed: 1696 ms.
+2026-06-15T13:59:23.2590543+00:00 ContainerStatus: Site: app-aichatbot-prod-cin-001 stopped.
+2026-06-15T13:59:40.0510534+00:00 ContainerStream: INFO:     169.254.130.1:18355 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:59:41.1672373+00:00 ContainerStream: INFO:     169.254.130.1:18355 - "GET / HTTP/1.1" 200 OK
+2026-06-15T13:59:59.9712912+00:00 ContainerStatus: State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-15T14:00:00.8282024+00:00 ContainerStatus: State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-15T14:00:04.8392225+00:00 ContainerStream: INFO:     169.254.130.1:13605 - "GET / HTTP/1.1" 200 OK
+2026-06-15T14:00:05.2659049+00:00 ContainerStatus: State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-15T14:00:05.2661008+00:00 ContainerStatus: Container start method called.
+2026-06-15T14:00:05.2661623+00:00 ContainerStatus: State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-15T14:00:05.2662952+00:00 ContainerStatus: Establishing network.
+2026-06-15T14:00:05.2664383+00:00 ContainerStatus: Pulling image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0.
+2026-06-15T14:00:08.8382531+00:00 ContainerStatus: Container is starting.
+2026-06-15T14:00:08.8383328+00:00 ContainerStatus: State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-15T14:00:08.8384615+00:00 ContainerStatus: Establishing user namespace if not established already.
+2026-06-15T14:00:08.8385745+00:00 ContainerStatus: Establishing network if not established already.
+2026-06-15T14:00:08.8387173+00:00 ContainerStatus: Mounting volumes.
+2026-06-15T14:00:08.8388664+00:00 ContainerStatus: Nested mountpoint 
+2026-06-15T14:00:08.8466727+00:00 ContainerStatus: Nested mountpoint volatile/logs
+2026-06-15T14:00:08.8555384+00:00 ContainerStatus: Nested mountpoint 
+2026-06-15T14:00:08.8768726+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for app-aichatbot-prod-cin-001. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-15T14:00:08.8770061+00:00 ContainerStatus: Creating container.
+2026-06-15T14:00:08.8771229+00:00 ContainerStatus: Creating pipes for streaming container io.
+2026-06-15T14:00:08.8772442+00:00 ContainerStatus: Creating stdout named pipe at /podr/container/pipe/215a1fb82ddf_app-aichatbot-prod-cin-001/stdout_9dab698704064016a0f761c309922fa3.
+2026-06-15T14:00:08.8774581+00:00 ContainerStatus: Successfully created stdout named pipe at: /podr/container/pipe/215a1fb82ddf_app-aichatbot-prod-cin-001/stdout_9dab698704064016a0f761c309922fa3.
+2026-06-15T14:00:08.8775613+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/215a1fb82ddf_app-aichatbot-prod-cin-001/stdout_9dab698704064016a0f761c309922fa3 for reading in non-blocking mode.
+2026-06-15T14:00:08.8776960+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/215a1fb82ddf_app-aichatbot-prod-cin-001/stdout_9dab698704064016a0f761c309922fa3.
+2026-06-15T14:00:08.8778124+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/215a1fb82ddf_app-aichatbot-prod-cin-001/stdout_9dab698704064016a0f761c309922fa3.
+2026-06-15T14:00:08.8947050+00:00 ContainerStatus: Creating stderr named pipe at /podr/container/pipe/215a1fb82ddf_app-aichatbot-prod-cin-001/stderr_2e2587bcfa3641f7af6d549ae195e1d8.
+2026-06-15T14:00:08.8948956+00:00 ContainerStatus: Successfully created stderr named pipe at: /podr/container/pipe/215a1fb82ddf_app-aichatbot-prod-cin-001/stderr_2e2587bcfa3641f7af6d549ae195e1d8.
+2026-06-15T14:00:08.8950362+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/215a1fb82ddf_app-aichatbot-prod-cin-001/stderr_2e2587bcfa3641f7af6d549ae195e1d8 for reading in non-blocking mode.
+2026-06-15T14:00:08.8951730+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/215a1fb82ddf_app-aichatbot-prod-cin-001/stderr_2e2587bcfa3641f7af6d549ae195e1d8.
+2026-06-15T14:00:08.9022251+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/215a1fb82ddf_app-aichatbot-prod-cin-001/stderr_2e2587bcfa3641f7af6d549ae195e1d8.
+2026-06-15T14:00:08.9024207+00:00 ContainerStatus: Overriding PORT environment variable with pre-calculated port: 8000.
+2026-06-15T14:00:08.9025353+00:00 ContainerStatus: Setting value of PORT variable to 8000
+2026-06-15T14:00:08.9027365+00:00 ContainerStatus: Creating container with image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 from registry: acraichatbotprodcin001.azurecr.io and fully qualified image name: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0
+2026-06-15T14:00:09.1053770+00:00 ContainerStatus: Starting container: 215a1fb82ddf_app-aichatbot-prod-cin-001.
+2026-06-15T14:00:09.1217505+00:00 ContainerStatus: Starting watchers and probes.
+2026-06-15T14:00:09.1220192+00:00 ContainerStatus: Starting metrics collection.
+2026-06-15T14:00:09.1224958+00:00 ContainerStatus: Container is running.
+2026-06-15T14:00:09.1225844+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-15T14:00:09.1430543+00:00 ContainerStatus: Container start method finished after 3876 ms.
+2026-06-15T14:00:09.1432462+00:00 ContainerStatus: State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-15T14:00:09.1432710+00:00 ContainerStatus: State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-15T14:00:10.0568127+00:00 ContainerStream: INFO:     169.254.130.1:40387 - "GET / HTTP/1.1" 200 OK
+2026-06-15T14:00:11.1731887+00:00 ContainerStream: INFO:     169.254.130.1:40387 - "GET / HTTP/1.1" 200 OK
+2026-06-15T14:00:11.5568628+00:00 ContainerStream: INFO:     Started server process [1]
+2026-06-15T14:00:11.5570761+00:00 ContainerStream: INFO:     Waiting for application startup.
+2026-06-15T14:00:11.5573794+00:00 ContainerStream: INFO:     Application startup complete.
+2026-06-15T14:00:11.5596399+00:00 ContainerStream: INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-06-15T14:00:12.1853444+00:00 ContainerStream: INFO:     169.254.130.1:41045 - "GET /robots933456.txt HTTP/1.1" 404 Not Found
+2026-06-15T14:00:12.1869352+00:00 ContainerStatus: Site startup probe succeeded after 3.0433004 seconds.
+2026-06-15T14:00:12.2723230+00:00 ContainerStatus: State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 3.0433004 seconds., DetailsLevel: INFO
+2026-06-15T14:00:12.3961178+00:00 ContainerStatus: Site started.
+2026-06-15T14:00:12.3962208+00:00 ContainerStatus: State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 06/15/2026 14:00:12 (UTC), DetailsLevel: INFO

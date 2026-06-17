@@ -22,6 +22,10 @@ variable "search_public_network_access_enabled" {
   type    = bool
   default = false
 }
+variable "manage_search_data_plane" {
+  type    = bool
+  default = false
+}
 variable "openai_public_network_access_enabled" {
   type    = bool
   default = false

@@ -33,6 +33,13 @@ resource "azuread_user" "bootstrap_admin" {
   password              = random_password.bootstrap_admin[0].result
   force_password_change = true
   account_enabled       = true
+
+  lifecycle {
+    ignore_changes = [
+      password,
+      force_password_change,
+    ]
+  }
 }
 
 resource "azuread_user" "bootstrap_test" {
@@ -44,6 +51,13 @@ resource "azuread_user" "bootstrap_test" {
   password              = random_password.bootstrap_test[0].result
   force_password_change = true
   account_enabled       = true
+
+  lifecycle {
+    ignore_changes = [
+      password,
+      force_password_change,
+    ]
+  }
 }
 
 resource "azuread_group" "admins" {

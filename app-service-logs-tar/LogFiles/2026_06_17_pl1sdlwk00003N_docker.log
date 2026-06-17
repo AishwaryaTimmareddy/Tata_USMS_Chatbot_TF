@@ -1,0 +1,1020 @@
+2026-06-17T06:29:50.1479625Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T06:29:51.7009073Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T06:29:57.2717325Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T06:29:57.2729529Z Container start method called.
+2026-06-17T06:29:57.2730892Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T06:29:57.2739169Z Establishing network.
+2026-06-17T06:29:57.2746660Z Pulling image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0.
+2026-06-17T06:30:04.3982939Z Container is starting.
+2026-06-17T06:30:04.3983968Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T06:30:04.3986678Z Establishing user namespace if not established already.
+2026-06-17T06:30:04.3989383Z Establishing network if not established already.
+2026-06-17T06:30:04.3990819Z Mounting volumes.
+2026-06-17T06:30:04.3992166Z Nested mountpoint 
+2026-06-17T06:30:04.4114271Z Nested mountpoint volatile/logs
+2026-06-17T06:30:04.4236519Z Nested mountpoint 
+2026-06-17T06:30:04.4267457Z Nested mountpoint 
+2026-06-17T06:30:04.4694270Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for app-aichatbot-prod-cin-001. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-17T06:30:04.4695635Z Creating container.
+2026-06-17T06:30:04.4696877Z Creating pipes for streaming container io.
+2026-06-17T06:30:04.4698103Z Creating stdout named pipe at /podr/container/pipe/174687b29f2a_app-aichatbot-prod-cin-001/stdout_bddb8927c6e2429fa4b381225543fdd4.
+2026-06-17T06:30:04.4902013Z Successfully created stdout named pipe at: /podr/container/pipe/174687b29f2a_app-aichatbot-prod-cin-001/stdout_bddb8927c6e2429fa4b381225543fdd4.
+2026-06-17T06:30:04.4903597Z Opening named pipe /podr/container/pipe/174687b29f2a_app-aichatbot-prod-cin-001/stdout_bddb8927c6e2429fa4b381225543fdd4 for reading in non-blocking mode.
+2026-06-17T06:30:04.4905016Z Successfully opened named pipe: /podr/container/pipe/174687b29f2a_app-aichatbot-prod-cin-001/stdout_bddb8927c6e2429fa4b381225543fdd4.
+2026-06-17T06:30:04.4906307Z Successfully removed non-blocking flag from /podr/container/pipe/174687b29f2a_app-aichatbot-prod-cin-001/stdout_bddb8927c6e2429fa4b381225543fdd4.
+2026-06-17T06:30:04.4907945Z Creating stderr named pipe at /podr/container/pipe/174687b29f2a_app-aichatbot-prod-cin-001/stderr_c5fe0ff012c549da922a038ea77cf514.
+2026-06-17T06:30:04.4909682Z Successfully created stderr named pipe at: /podr/container/pipe/174687b29f2a_app-aichatbot-prod-cin-001/stderr_c5fe0ff012c549da922a038ea77cf514.
+2026-06-17T06:30:04.4910808Z Opening named pipe /podr/container/pipe/174687b29f2a_app-aichatbot-prod-cin-001/stderr_c5fe0ff012c549da922a038ea77cf514 for reading in non-blocking mode.
+2026-06-17T06:30:04.4912152Z Successfully opened named pipe: /podr/container/pipe/174687b29f2a_app-aichatbot-prod-cin-001/stderr_c5fe0ff012c549da922a038ea77cf514.
+2026-06-17T06:30:04.4913271Z Successfully removed non-blocking flag from /podr/container/pipe/174687b29f2a_app-aichatbot-prod-cin-001/stderr_c5fe0ff012c549da922a038ea77cf514.
+2026-06-17T06:30:04.4914642Z Overriding PORT environment variable with pre-calculated port: 8000.
+2026-06-17T06:30:04.4915751Z Setting value of PORT variable to 8000
+2026-06-17T06:30:04.4999655Z Creating container with image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 from registry: acraichatbotprodcin001.azurecr.io and fully qualified image name: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0
+2026-06-17T06:30:04.8730163Z Starting container: 174687b29f2a_app-aichatbot-prod-cin-001.
+2026-06-17T06:30:04.8885640Z Starting watchers and probes.
+2026-06-17T06:30:04.8887965Z Starting metrics collection.
+2026-06-17T06:30:04.8899780Z Container is running.
+2026-06-17T06:30:04.8936458Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T06:30:04.9188097Z Container start method finished after 7645 ms.
+2026-06-17T06:30:04.9190327Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T06:30:04.9190625Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-17T06:30:05.2394506Z Site startup probe failed after 0.3199475 seconds.
+2026-06-17T06:30:05.4664171Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: ERR
+2026-06-17T06:30:05.4723819Z Failed to start site. Revert by stopping site.
+2026-06-17T06:30:05.4724987Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: ERR
+2026-06-17T06:30:05.4727392Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: ERR
+2026-06-17T06:30:05.4766531Z Container is terminating. Grace period: 5 seconds.
+2026-06-17T06:30:05.5273975Z Stop and delete container. Retry count = 0
+2026-06-17T06:30:05.5283318Z Stopping container: 174687b29f2a_app-aichatbot-prod-cin-001.
+2026-06-17T06:30:13.0968203Z Deleting container: 174687b29f2a_app-aichatbot-prod-cin-001. Retry count = 0
+2026-06-17T06:30:13.1698656Z Container spec TerminationMessagePolicy  path 
+2026-06-17T06:30:13.1728806Z Container is terminated. Total time elapsed: 7696 ms.
+2026-06-17T06:30:13.1730550Z Site container: app-aichatbot-prod-cin-001 terminated during site startup.
+2026-06-17T06:30:13.1795621Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: app-aichatbot-prod-cin-001 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-17T06:30:13.4168266Z Site container: app-aichatbot-prod-cin-001_managedIdentity terminated during site startup.
+2026-06-17T06:30:13.4169380Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: app-aichatbot-prod-cin-001 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-06-17T06:30:13.4170932Z Site: app-aichatbot-prod-cin-001 stopped.
+2026-06-17T06:30:34.0875119Z State: Stopping, Action: StoppingSite, LastError: SiteStartupCancelled, LastErrorTimestamp: 06/16/2026 05:45:17, LastErrorDetails: , Details: Site started at 06/16/2026 12:58:34 (UTC), DetailsLevel: INFO
+2026-06-17T06:30:34.0877328Z State: Stopping, Action: StoppingSiteContainers, LastError: SiteStartupCancelled, LastErrorTimestamp: 06/16/2026 05:45:17, LastErrorDetails: , Details: Site started at 06/16/2026 12:58:34 (UTC), DetailsLevel: INFO
+2026-06-17T06:30:34.0878760Z Container is terminating. Grace period: 5 seconds.
+2026-06-17T06:30:34.1147655Z Stop and delete container. Retry count = 0
+2026-06-17T06:30:34.1149123Z Stopping container: c46b4925a89b_app-aichatbot-prod-cin-001.
+2026-06-17T06:30:35.7908374Z Deleting container: c46b4925a89b_app-aichatbot-prod-cin-001. Retry count = 0
+2026-06-17T06:30:35.9088087Z Container spec TerminationMessagePolicy  path 
+2026-06-17T06:30:35.9089829Z Container is terminated. Total time elapsed: 1820 ms.
+2026-06-17T06:30:37.4735111Z Site: app-aichatbot-prod-cin-001 stopped.
+2026-06-17T06:30:57.7999070Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 06/17/2026 06:30:13 (UTC), DetailsLevel: ERR
+2026-06-17T06:30:58.4335831Z State: Starting, Action: StartingMsiContainer, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 06/17/2026 06:30:13 (UTC), DetailsLevel: ERR
+2026-06-17T06:31:17.1050111Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 06/17/2026 06:30:13 (UTC), DetailsLevel: ERR
+2026-06-17T06:31:17.1051836Z Container start method called.
+2026-06-17T06:31:17.1052399Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T06:31:17.1058076Z Establishing network.
+2026-06-17T06:31:17.1059832Z Pulling image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0.
+2026-06-17T06:31:19.4029679Z Container is starting.
+2026-06-17T06:31:19.4030624Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T06:31:19.4031983Z Establishing user namespace if not established already.
+2026-06-17T06:31:19.4033238Z Establishing network if not established already.
+2026-06-17T06:31:19.4034618Z Mounting volumes.
+2026-06-17T06:31:19.4036373Z Nested mountpoint 
+2026-06-17T06:31:19.4088652Z Nested mountpoint volatile/logs
+2026-06-17T06:31:19.4426950Z Nested mountpoint 
+2026-06-17T06:31:19.4435136Z Nested mountpoint 
+2026-06-17T06:31:19.4729216Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for app-aichatbot-prod-cin-001. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-17T06:31:19.4730524Z Creating container.
+2026-06-17T06:31:19.4731518Z Creating pipes for streaming container io.
+2026-06-17T06:31:19.4732538Z Creating stdout named pipe at /podr/container/pipe/fdacdc96bb21_app-aichatbot-prod-cin-001/stdout_4cd13768fb4540a883016ab99ebc9342.
+2026-06-17T06:31:19.4734905Z Successfully created stdout named pipe at: /podr/container/pipe/fdacdc96bb21_app-aichatbot-prod-cin-001/stdout_4cd13768fb4540a883016ab99ebc9342.
+2026-06-17T06:31:19.4735998Z Opening named pipe /podr/container/pipe/fdacdc96bb21_app-aichatbot-prod-cin-001/stdout_4cd13768fb4540a883016ab99ebc9342 for reading in non-blocking mode.
+2026-06-17T06:31:19.4737310Z Successfully opened named pipe: /podr/container/pipe/fdacdc96bb21_app-aichatbot-prod-cin-001/stdout_4cd13768fb4540a883016ab99ebc9342.
+2026-06-17T06:31:19.4738412Z Successfully removed non-blocking flag from /podr/container/pipe/fdacdc96bb21_app-aichatbot-prod-cin-001/stdout_4cd13768fb4540a883016ab99ebc9342.
+2026-06-17T06:31:19.4844406Z Creating stderr named pipe at /podr/container/pipe/fdacdc96bb21_app-aichatbot-prod-cin-001/stderr_ae5e543d497347d2a5a5b66eef362072.
+2026-06-17T06:31:19.4846588Z Successfully created stderr named pipe at: /podr/container/pipe/fdacdc96bb21_app-aichatbot-prod-cin-001/stderr_ae5e543d497347d2a5a5b66eef362072.
+2026-06-17T06:31:19.4847946Z Opening named pipe /podr/container/pipe/fdacdc96bb21_app-aichatbot-prod-cin-001/stderr_ae5e543d497347d2a5a5b66eef362072 for reading in non-blocking mode.
+2026-06-17T06:31:19.4849435Z Successfully opened named pipe: /podr/container/pipe/fdacdc96bb21_app-aichatbot-prod-cin-001/stderr_ae5e543d497347d2a5a5b66eef362072.
+2026-06-17T06:31:19.4850693Z Successfully removed non-blocking flag from /podr/container/pipe/fdacdc96bb21_app-aichatbot-prod-cin-001/stderr_ae5e543d497347d2a5a5b66eef362072.
+2026-06-17T06:31:19.4852459Z Overriding PORT environment variable with pre-calculated port: 8000.
+2026-06-17T06:31:19.4853609Z Setting value of PORT variable to 8000
+2026-06-17T06:31:19.4855554Z Creating container with image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 from registry: acraichatbotprodcin001.azurecr.io and fully qualified image name: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0
+2026-06-17T06:31:19.6902145Z Starting container: fdacdc96bb21_app-aichatbot-prod-cin-001.
+2026-06-17T06:31:19.7068096Z Starting watchers and probes.
+2026-06-17T06:31:19.7070730Z Starting metrics collection.
+2026-06-17T06:31:19.7072440Z Container is running.
+2026-06-17T06:31:19.7073091Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T06:31:19.7272981Z Container start method finished after 2621 ms.
+2026-06-17T06:31:19.7274922Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T06:31:19.7275202Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-17T06:31:22.8200921Z Site startup probe succeeded after 3.0920137 seconds.
+2026-06-17T06:31:22.8931223Z State: Starting, Action: WarmUpProbeSucceeded, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site startup probe succeeded after 3.0920137 seconds., DetailsLevel: INFO
+2026-06-17T06:31:22.9535989Z Site started.
+2026-06-17T06:31:22.9541375Z State: Started, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 06:31:22 (UTC), DetailsLevel: INFO
+2026-06-17T06:31:28.3626900Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T06:31:29.6273189Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T06:31:47.2314229Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T06:31:47.2320121Z Container start method called.
+2026-06-17T06:31:47.2325197Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T06:31:47.2327441Z Establishing network.
+2026-06-17T06:31:47.2335036Z Pulling image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0.
+2026-06-17T06:31:49.3024883Z Container is starting.
+2026-06-17T06:31:49.3026481Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T06:31:49.3028850Z Establishing user namespace if not established already.
+2026-06-17T06:31:49.3031255Z Establishing network if not established already.
+2026-06-17T06:31:49.3033310Z Mounting volumes.
+2026-06-17T06:31:49.3036023Z Nested mountpoint 
+2026-06-17T06:31:49.3056208Z Nested mountpoint volatile/logs
+2026-06-17T06:31:49.3073644Z Nested mountpoint 
+2026-06-17T06:31:49.3104445Z Nested mountpoint 
+2026-06-17T06:31:49.3646190Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for app-aichatbot-prod-cin-001. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-17T06:31:49.3647469Z Creating container.
+2026-06-17T06:31:49.3648543Z Creating pipes for streaming container io.
+2026-06-17T06:31:49.3649700Z Creating stdout named pipe at /podr/container/pipe/dbe4a733a5d8_app-aichatbot-prod-cin-001/stdout_d4fd1bd6b3164f6dafbe5e44c8715737.
+2026-06-17T06:31:49.3651967Z Successfully created stdout named pipe at: /podr/container/pipe/dbe4a733a5d8_app-aichatbot-prod-cin-001/stdout_d4fd1bd6b3164f6dafbe5e44c8715737.
+2026-06-17T06:31:49.3653030Z Opening named pipe /podr/container/pipe/dbe4a733a5d8_app-aichatbot-prod-cin-001/stdout_d4fd1bd6b3164f6dafbe5e44c8715737 for reading in non-blocking mode.
+2026-06-17T06:31:49.3654385Z Successfully opened named pipe: /podr/container/pipe/dbe4a733a5d8_app-aichatbot-prod-cin-001/stdout_d4fd1bd6b3164f6dafbe5e44c8715737.
+2026-06-17T06:31:49.3655551Z Successfully removed non-blocking flag from /podr/container/pipe/dbe4a733a5d8_app-aichatbot-prod-cin-001/stdout_d4fd1bd6b3164f6dafbe5e44c8715737.
+2026-06-17T06:31:49.3657368Z Creating stderr named pipe at /podr/container/pipe/dbe4a733a5d8_app-aichatbot-prod-cin-001/stderr_c5cbe739f8cd450789d6ca1391042e52.
+2026-06-17T06:31:49.3659014Z Successfully created stderr named pipe at: /podr/container/pipe/dbe4a733a5d8_app-aichatbot-prod-cin-001/stderr_c5cbe739f8cd450789d6ca1391042e52.
+2026-06-17T06:31:49.3660303Z Opening named pipe /podr/container/pipe/dbe4a733a5d8_app-aichatbot-prod-cin-001/stderr_c5cbe739f8cd450789d6ca1391042e52 for reading in non-blocking mode.
+2026-06-17T06:31:49.3663901Z Successfully opened named pipe: /podr/container/pipe/dbe4a733a5d8_app-aichatbot-prod-cin-001/stderr_c5cbe739f8cd450789d6ca1391042e52.
+2026-06-17T06:31:49.3664946Z Successfully removed non-blocking flag from /podr/container/pipe/dbe4a733a5d8_app-aichatbot-prod-cin-001/stderr_c5cbe739f8cd450789d6ca1391042e52.
+2026-06-17T06:31:49.3666325Z Overriding PORT environment variable with pre-calculated port: 8000.
+2026-06-17T06:31:49.3667252Z Setting value of PORT variable to 8000
+2026-06-17T06:31:49.3669001Z Creating container with image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 from registry: acraichatbotprodcin001.azurecr.io and fully qualified image name: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0
+2026-06-17T06:31:50.1077592Z Starting container: dbe4a733a5d8_app-aichatbot-prod-cin-001.
+2026-06-17T06:31:50.1308404Z Starting watchers and probes.
+2026-06-17T06:31:50.1310811Z Starting metrics collection.
+2026-06-17T06:31:50.1312497Z Container is running.
+2026-06-17T06:31:50.1313152Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T06:31:50.1602390Z Container start method finished after 2928 ms.
+2026-06-17T06:31:50.1604373Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T06:31:50.1604775Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-17T06:31:54.0807128Z Site startup probe succeeded after 3.9199167 seconds.
+2026-06-17T06:31:54.1667626Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 3.9199167 seconds., DetailsLevel: INFO
+2026-06-17T06:31:54.2783467Z Site started.
+2026-06-17T06:31:54.2784349Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 06/17/2026 06:31:54 (UTC), DetailsLevel: INFO
+2026-06-17T06:32:14.3917156Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 06:31:22 (UTC), DetailsLevel: INFO
+2026-06-17T06:32:14.3928903Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 06:31:22 (UTC), DetailsLevel: INFO
+2026-06-17T06:32:14.3930587Z Container is terminating. Grace period: 5 seconds.
+2026-06-17T06:32:14.3960378Z Stop and delete container. Retry count = 0
+2026-06-17T06:32:14.3961753Z Stopping container: fdacdc96bb21_app-aichatbot-prod-cin-001.
+2026-06-17T06:32:16.1035792Z Deleting container: fdacdc96bb21_app-aichatbot-prod-cin-001. Retry count = 0
+2026-06-17T06:32:16.1739234Z Container spec TerminationMessagePolicy  path 
+2026-06-17T06:32:16.1747257Z Container is terminated. Total time elapsed: 1780 ms.
+2026-06-17T06:32:16.7608163Z Site: app-aichatbot-prod-cin-001 stopped.
+2026-06-17T07:23:47.2001258Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T07:23:48.3776576Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T07:24:08.8943671Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T07:24:08.8949288Z Container start method called.
+2026-06-17T07:24:08.8956272Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T07:24:08.8966649Z Establishing network.
+2026-06-17T07:24:08.8970527Z Pulling image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0.
+2026-06-17T07:24:14.5815630Z Image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 is pulled from registry acraichatbotprodcin001.azurecr.io
+2026-06-17T07:24:14.5816735Z Container is starting.
+2026-06-17T07:24:14.5868194Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T07:24:14.5869894Z Establishing user namespace if not established already.
+2026-06-17T07:24:14.5871067Z Establishing network if not established already.
+2026-06-17T07:24:14.5872348Z Mounting volumes.
+2026-06-17T07:24:14.5873595Z Nested mountpoint 
+2026-06-17T07:24:14.5948086Z Nested mountpoint volatile/logs
+2026-06-17T07:24:14.6086682Z Nested mountpoint 
+2026-06-17T07:24:14.6093503Z Nested mountpoint 
+2026-06-17T07:24:14.6545787Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for app-aichatbot-prod-cin-001. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-17T07:24:14.6547198Z Creating container.
+2026-06-17T07:24:14.6548306Z Creating pipes for streaming container io.
+2026-06-17T07:24:14.6549490Z Creating stdout named pipe at /podr/container/pipe/5a51b3ce6300_app-aichatbot-prod-cin-001/stdout_a5afa837d93f4ed38f6e0543b269fa38.
+2026-06-17T07:24:14.6554856Z Successfully created stdout named pipe at: /podr/container/pipe/5a51b3ce6300_app-aichatbot-prod-cin-001/stdout_a5afa837d93f4ed38f6e0543b269fa38.
+2026-06-17T07:24:14.6555927Z Opening named pipe /podr/container/pipe/5a51b3ce6300_app-aichatbot-prod-cin-001/stdout_a5afa837d93f4ed38f6e0543b269fa38 for reading in non-blocking mode.
+2026-06-17T07:24:14.6557375Z Successfully opened named pipe: /podr/container/pipe/5a51b3ce6300_app-aichatbot-prod-cin-001/stdout_a5afa837d93f4ed38f6e0543b269fa38.
+2026-06-17T07:24:14.6558582Z Successfully removed non-blocking flag from /podr/container/pipe/5a51b3ce6300_app-aichatbot-prod-cin-001/stdout_a5afa837d93f4ed38f6e0543b269fa38.
+2026-06-17T07:24:14.6560339Z Creating stderr named pipe at /podr/container/pipe/5a51b3ce6300_app-aichatbot-prod-cin-001/stderr_e55e191410404075ade1a8cde70c8e4c.
+2026-06-17T07:24:14.6562118Z Successfully created stderr named pipe at: /podr/container/pipe/5a51b3ce6300_app-aichatbot-prod-cin-001/stderr_e55e191410404075ade1a8cde70c8e4c.
+2026-06-17T07:24:14.6563340Z Opening named pipe /podr/container/pipe/5a51b3ce6300_app-aichatbot-prod-cin-001/stderr_e55e191410404075ade1a8cde70c8e4c for reading in non-blocking mode.
+2026-06-17T07:24:14.6564685Z Successfully opened named pipe: /podr/container/pipe/5a51b3ce6300_app-aichatbot-prod-cin-001/stderr_e55e191410404075ade1a8cde70c8e4c.
+2026-06-17T07:24:14.6566037Z Successfully removed non-blocking flag from /podr/container/pipe/5a51b3ce6300_app-aichatbot-prod-cin-001/stderr_e55e191410404075ade1a8cde70c8e4c.
+2026-06-17T07:24:14.6567573Z Overriding PORT environment variable with pre-calculated port: 8000.
+2026-06-17T07:24:14.6568743Z Setting value of PORT variable to 8000
+2026-06-17T07:24:14.6570813Z Creating container with image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 from registry: acraichatbotprodcin001.azurecr.io and fully qualified image name: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0
+2026-06-17T07:24:14.9063048Z Starting container: 5a51b3ce6300_app-aichatbot-prod-cin-001.
+2026-06-17T07:24:14.9236589Z Starting watchers and probes.
+2026-06-17T07:24:14.9238959Z Starting metrics collection.
+2026-06-17T07:24:14.9240513Z Container is running.
+2026-06-17T07:24:14.9241193Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T07:24:14.9485923Z Container start method finished after 6053 ms.
+2026-06-17T07:24:14.9487859Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T07:24:14.9488102Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-17T07:24:18.0626997Z Site startup probe succeeded after 3.099474 seconds.
+2026-06-17T07:24:18.1290991Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 3.099474 seconds., DetailsLevel: INFO
+2026-06-17T07:24:18.2779017Z Site started.
+2026-06-17T07:24:18.2780388Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 06/17/2026 07:24:18 (UTC), DetailsLevel: INFO
+2026-06-17T07:24:38.3519465Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 06:31:54 (UTC), DetailsLevel: INFO
+2026-06-17T07:24:38.3522036Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 06:31:54 (UTC), DetailsLevel: INFO
+2026-06-17T07:24:38.3523323Z Container is terminating. Grace period: 5 seconds.
+2026-06-17T07:24:38.3546395Z Stop and delete container. Retry count = 0
+2026-06-17T07:24:38.3547748Z Stopping container: dbe4a733a5d8_app-aichatbot-prod-cin-001.
+2026-06-17T07:24:40.1387338Z Deleting container: dbe4a733a5d8_app-aichatbot-prod-cin-001. Retry count = 0
+2026-06-17T07:24:40.2465424Z Container spec TerminationMessagePolicy  path 
+2026-06-17T07:24:40.2468254Z Container is terminated. Total time elapsed: 1894 ms.
+2026-06-17T07:24:41.8235563Z Site: app-aichatbot-prod-cin-001 stopped.
+2026-06-17T09:26:37.2007692Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T09:26:38.0502972Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T09:26:58.4919459Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T09:26:58.4922648Z Container start method called.
+2026-06-17T09:26:58.4923786Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T09:26:58.4927318Z Establishing network.
+2026-06-17T09:26:58.4934285Z Pulling image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0.
+2026-06-17T09:27:00.9615792Z Image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 is pulled from registry acraichatbotprodcin001.azurecr.io
+2026-06-17T09:27:00.9617127Z Container is starting.
+2026-06-17T09:27:00.9617874Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T09:27:00.9619046Z Establishing user namespace if not established already.
+2026-06-17T09:27:00.9620456Z Establishing network if not established already.
+2026-06-17T09:27:00.9626706Z Mounting volumes.
+2026-06-17T09:27:00.9628262Z Nested mountpoint 
+2026-06-17T09:27:00.9724209Z Nested mountpoint volatile/logs
+2026-06-17T09:27:00.9821580Z Nested mountpoint 
+2026-06-17T09:27:00.9833920Z Nested mountpoint 
+2026-06-17T09:27:01.0161243Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for app-aichatbot-prod-cin-001. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-17T09:27:01.0168136Z Creating container.
+2026-06-17T09:27:01.0177398Z Creating pipes for streaming container io.
+2026-06-17T09:27:01.0186154Z Creating stdout named pipe at /podr/container/pipe/4fad9b7b9175_app-aichatbot-prod-cin-001/stdout_be8b7f90d08b43b3b6a461e58e700904.
+2026-06-17T09:27:01.0209231Z Successfully created stdout named pipe at: /podr/container/pipe/4fad9b7b9175_app-aichatbot-prod-cin-001/stdout_be8b7f90d08b43b3b6a461e58e700904.
+2026-06-17T09:27:01.0213645Z Opening named pipe /podr/container/pipe/4fad9b7b9175_app-aichatbot-prod-cin-001/stdout_be8b7f90d08b43b3b6a461e58e700904 for reading in non-blocking mode.
+2026-06-17T09:27:01.0222688Z Successfully opened named pipe: /podr/container/pipe/4fad9b7b9175_app-aichatbot-prod-cin-001/stdout_be8b7f90d08b43b3b6a461e58e700904.
+2026-06-17T09:27:01.0233800Z Successfully removed non-blocking flag from /podr/container/pipe/4fad9b7b9175_app-aichatbot-prod-cin-001/stdout_be8b7f90d08b43b3b6a461e58e700904.
+2026-06-17T09:27:01.0259055Z Creating stderr named pipe at /podr/container/pipe/4fad9b7b9175_app-aichatbot-prod-cin-001/stderr_5ee7da91739b4eae86e3eaec77a020ca.
+2026-06-17T09:27:01.0268121Z Successfully created stderr named pipe at: /podr/container/pipe/4fad9b7b9175_app-aichatbot-prod-cin-001/stderr_5ee7da91739b4eae86e3eaec77a020ca.
+2026-06-17T09:27:01.0272027Z Opening named pipe /podr/container/pipe/4fad9b7b9175_app-aichatbot-prod-cin-001/stderr_5ee7da91739b4eae86e3eaec77a020ca for reading in non-blocking mode.
+2026-06-17T09:27:01.0286223Z Successfully opened named pipe: /podr/container/pipe/4fad9b7b9175_app-aichatbot-prod-cin-001/stderr_5ee7da91739b4eae86e3eaec77a020ca.
+2026-06-17T09:27:01.0293065Z Successfully removed non-blocking flag from /podr/container/pipe/4fad9b7b9175_app-aichatbot-prod-cin-001/stderr_5ee7da91739b4eae86e3eaec77a020ca.
+2026-06-17T09:27:01.0316384Z Overriding PORT environment variable with pre-calculated port: 8000.
+2026-06-17T09:27:01.0333265Z Setting value of PORT variable to 8000
+2026-06-17T09:27:01.0362453Z Creating container with image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 from registry: acraichatbotprodcin001.azurecr.io and fully qualified image name: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0
+2026-06-17T09:27:01.3234196Z Starting container: 4fad9b7b9175_app-aichatbot-prod-cin-001.
+2026-06-17T09:27:01.3390326Z Starting watchers and probes.
+2026-06-17T09:27:01.3396312Z Starting metrics collection.
+2026-06-17T09:27:01.3403400Z Container is running.
+2026-06-17T09:27:01.3419454Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T09:27:01.3697327Z Container start method finished after 2877 ms.
+2026-06-17T09:27:01.3699542Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T09:27:01.3700169Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-17T09:27:05.0411942Z Site startup probe succeeded after 3.6563932 seconds.
+2026-06-17T09:27:05.1657937Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 3.6563932 seconds., DetailsLevel: INFO
+2026-06-17T09:27:05.3327696Z Site started.
+2026-06-17T09:27:05.3328841Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 06/17/2026 09:27:05 (UTC), DetailsLevel: INFO
+2026-06-17T09:27:25.4215481Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 07:24:18 (UTC), DetailsLevel: INFO
+2026-06-17T09:27:25.4218798Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 07:24:18 (UTC), DetailsLevel: INFO
+2026-06-17T09:27:25.4220208Z Container is terminating. Grace period: 5 seconds.
+2026-06-17T09:27:25.4251381Z Stop and delete container. Retry count = 0
+2026-06-17T09:27:25.4252618Z Stopping container: 5a51b3ce6300_app-aichatbot-prod-cin-001.
+2026-06-17T09:27:27.2661708Z Deleting container: 5a51b3ce6300_app-aichatbot-prod-cin-001. Retry count = 0
+2026-06-17T09:27:27.3344491Z Container spec TerminationMessagePolicy  path 
+2026-06-17T09:27:27.3346514Z Container is terminated. Total time elapsed: 1912 ms.
+2026-06-17T09:27:28.5988242Z Site: app-aichatbot-prod-cin-001 stopped.
+2026-06-17T09:36:37.1995682Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T09:36:38.3822770Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T09:36:58.7725456Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T09:36:58.7727247Z Container start method called.
+2026-06-17T09:36:58.7727798Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T09:36:58.7729101Z Establishing network.
+2026-06-17T09:36:58.7730388Z Pulling image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0.
+2026-06-17T09:37:04.3365369Z Image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 is pulled from registry acraichatbotprodcin001.azurecr.io
+2026-06-17T09:37:04.3366812Z Container is starting.
+2026-06-17T09:37:04.3367803Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T09:37:04.3369103Z Establishing user namespace if not established already.
+2026-06-17T09:37:04.3370349Z Establishing network if not established already.
+2026-06-17T09:37:04.3386950Z Mounting volumes.
+2026-06-17T09:37:04.3388446Z Nested mountpoint 
+2026-06-17T09:37:04.3467119Z Nested mountpoint volatile/logs
+2026-06-17T09:37:04.3845359Z Nested mountpoint 
+2026-06-17T09:37:04.3955433Z Nested mountpoint 
+2026-06-17T09:37:04.4128602Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for app-aichatbot-prod-cin-001. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-17T09:37:04.4129811Z Creating container.
+2026-06-17T09:37:04.4130921Z Creating pipes for streaming container io.
+2026-06-17T09:37:04.4132084Z Creating stdout named pipe at /podr/container/pipe/fd37cf5b4b96_app-aichatbot-prod-cin-001/stdout_9de30b04d70049e4bf2ca8448a576cb8.
+2026-06-17T09:37:04.4244832Z Successfully created stdout named pipe at: /podr/container/pipe/fd37cf5b4b96_app-aichatbot-prod-cin-001/stdout_9de30b04d70049e4bf2ca8448a576cb8.
+2026-06-17T09:37:04.4247884Z Opening named pipe /podr/container/pipe/fd37cf5b4b96_app-aichatbot-prod-cin-001/stdout_9de30b04d70049e4bf2ca8448a576cb8 for reading in non-blocking mode.
+2026-06-17T09:37:04.4285566Z Successfully opened named pipe: /podr/container/pipe/fd37cf5b4b96_app-aichatbot-prod-cin-001/stdout_9de30b04d70049e4bf2ca8448a576cb8.
+2026-06-17T09:37:04.4286861Z Successfully removed non-blocking flag from /podr/container/pipe/fd37cf5b4b96_app-aichatbot-prod-cin-001/stdout_9de30b04d70049e4bf2ca8448a576cb8.
+2026-06-17T09:37:04.4288678Z Creating stderr named pipe at /podr/container/pipe/fd37cf5b4b96_app-aichatbot-prod-cin-001/stderr_462a9163764d44698dcc86425a07eb05.
+2026-06-17T09:37:04.4290615Z Successfully created stderr named pipe at: /podr/container/pipe/fd37cf5b4b96_app-aichatbot-prod-cin-001/stderr_462a9163764d44698dcc86425a07eb05.
+2026-06-17T09:37:04.4291979Z Opening named pipe /podr/container/pipe/fd37cf5b4b96_app-aichatbot-prod-cin-001/stderr_462a9163764d44698dcc86425a07eb05 for reading in non-blocking mode.
+2026-06-17T09:37:04.4293269Z Successfully opened named pipe: /podr/container/pipe/fd37cf5b4b96_app-aichatbot-prod-cin-001/stderr_462a9163764d44698dcc86425a07eb05.
+2026-06-17T09:37:04.4294382Z Successfully removed non-blocking flag from /podr/container/pipe/fd37cf5b4b96_app-aichatbot-prod-cin-001/stderr_462a9163764d44698dcc86425a07eb05.
+2026-06-17T09:37:04.4296233Z Overriding PORT environment variable with pre-calculated port: 8000.
+2026-06-17T09:37:04.4297328Z Setting value of PORT variable to 8000
+2026-06-17T09:37:04.4299164Z Creating container with image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 from registry: acraichatbotprodcin001.azurecr.io and fully qualified image name: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0
+2026-06-17T09:37:04.5895289Z Starting container: fd37cf5b4b96_app-aichatbot-prod-cin-001.
+2026-06-17T09:37:04.6069589Z Starting watchers and probes.
+2026-06-17T09:37:04.6079108Z Starting metrics collection.
+2026-06-17T09:37:04.6092178Z Container is running.
+2026-06-17T09:37:04.6117777Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T09:37:04.6327026Z Container start method finished after 5858 ms.
+2026-06-17T09:37:04.6350252Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T09:37:04.6350532Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-17T09:37:07.7324547Z Site startup probe succeeded after 3.0970642 seconds.
+2026-06-17T09:37:07.7973296Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 3.0970642 seconds., DetailsLevel: INFO
+2026-06-17T09:37:07.9335213Z Site started.
+2026-06-17T09:37:07.9336540Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 06/17/2026 09:37:07 (UTC), DetailsLevel: INFO
+2026-06-17T09:37:28.0709406Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 09:27:05 (UTC), DetailsLevel: INFO
+2026-06-17T09:37:28.0712388Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 09:27:05 (UTC), DetailsLevel: INFO
+2026-06-17T09:37:28.0713993Z Container is terminating. Grace period: 5 seconds.
+2026-06-17T09:37:28.0849866Z Stop and delete container. Retry count = 0
+2026-06-17T09:37:28.0850724Z Stopping container: 4fad9b7b9175_app-aichatbot-prod-cin-001.
+2026-06-17T09:37:30.0166569Z Deleting container: 4fad9b7b9175_app-aichatbot-prod-cin-001. Retry count = 0
+2026-06-17T09:37:30.1550413Z Container spec TerminationMessagePolicy  path 
+2026-06-17T09:37:30.1553034Z Container is terminated. Total time elapsed: 2083 ms.
+2026-06-17T09:37:31.5832723Z Site: app-aichatbot-prod-cin-001 stopped.
+2026-06-17T09:48:17.2126742Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T09:48:18.0202266Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T09:48:24.3424851Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T09:48:24.3427092Z Container start method called.
+2026-06-17T09:48:24.3427552Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T09:48:24.3428839Z Establishing network.
+2026-06-17T09:48:24.3430445Z Pulling image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0.
+2026-06-17T09:48:27.1088578Z Image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 is pulled from registry acraichatbotprodcin001.azurecr.io
+2026-06-17T09:48:27.1110918Z Container is starting.
+2026-06-17T09:48:27.1111805Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T09:48:27.1112845Z Establishing user namespace if not established already.
+2026-06-17T09:48:27.1113890Z Establishing network if not established already.
+2026-06-17T09:48:27.1114953Z Mounting volumes.
+2026-06-17T09:48:27.1116217Z Nested mountpoint 
+2026-06-17T09:48:27.1210736Z Nested mountpoint volatile/logs
+2026-06-17T09:48:27.1288180Z Nested mountpoint 
+2026-06-17T09:48:27.1295478Z Nested mountpoint 
+2026-06-17T09:48:27.1381748Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for app-aichatbot-prod-cin-001. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-17T09:48:27.1383085Z Creating container.
+2026-06-17T09:48:27.1384528Z Creating pipes for streaming container io.
+2026-06-17T09:48:27.1385740Z Creating stdout named pipe at /podr/container/pipe/924f02c10c18_app-aichatbot-prod-cin-001/stdout_dd7c772b5f924b3cac65bbe6597ba61c.
+2026-06-17T09:48:27.1388087Z Successfully created stdout named pipe at: /podr/container/pipe/924f02c10c18_app-aichatbot-prod-cin-001/stdout_dd7c772b5f924b3cac65bbe6597ba61c.
+2026-06-17T09:48:27.1389188Z Opening named pipe /podr/container/pipe/924f02c10c18_app-aichatbot-prod-cin-001/stdout_dd7c772b5f924b3cac65bbe6597ba61c for reading in non-blocking mode.
+2026-06-17T09:48:27.1390671Z Successfully opened named pipe: /podr/container/pipe/924f02c10c18_app-aichatbot-prod-cin-001/stdout_dd7c772b5f924b3cac65bbe6597ba61c.
+2026-06-17T09:48:27.1391964Z Successfully removed non-blocking flag from /podr/container/pipe/924f02c10c18_app-aichatbot-prod-cin-001/stdout_dd7c772b5f924b3cac65bbe6597ba61c.
+2026-06-17T09:48:27.1394548Z Creating stderr named pipe at /podr/container/pipe/924f02c10c18_app-aichatbot-prod-cin-001/stderr_b2c45d18f7644fc489b94fb7dea65a1d.
+2026-06-17T09:48:27.1396445Z Successfully created stderr named pipe at: /podr/container/pipe/924f02c10c18_app-aichatbot-prod-cin-001/stderr_b2c45d18f7644fc489b94fb7dea65a1d.
+2026-06-17T09:48:27.1397607Z Opening named pipe /podr/container/pipe/924f02c10c18_app-aichatbot-prod-cin-001/stderr_b2c45d18f7644fc489b94fb7dea65a1d for reading in non-blocking mode.
+2026-06-17T09:48:27.1398987Z Successfully opened named pipe: /podr/container/pipe/924f02c10c18_app-aichatbot-prod-cin-001/stderr_b2c45d18f7644fc489b94fb7dea65a1d.
+2026-06-17T09:48:27.1400086Z Successfully removed non-blocking flag from /podr/container/pipe/924f02c10c18_app-aichatbot-prod-cin-001/stderr_b2c45d18f7644fc489b94fb7dea65a1d.
+2026-06-17T09:48:27.1415917Z Overriding PORT environment variable with pre-calculated port: 8000.
+2026-06-17T09:48:27.1417187Z Setting value of PORT variable to 8000
+2026-06-17T09:48:27.1419168Z Creating container with image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 from registry: acraichatbotprodcin001.azurecr.io and fully qualified image name: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0
+2026-06-17T09:48:27.3855693Z Starting container: 924f02c10c18_app-aichatbot-prod-cin-001.
+2026-06-17T09:48:27.4007909Z Starting watchers and probes.
+2026-06-17T09:48:27.4024633Z Starting metrics collection.
+2026-06-17T09:48:27.4029543Z Container is running.
+2026-06-17T09:48:27.4031291Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T09:48:27.4214671Z Container start method finished after 3078 ms.
+2026-06-17T09:48:27.4216715Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T09:48:27.4216948Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-17T09:48:30.5113262Z Site startup probe succeeded after 3.0891591 seconds.
+2026-06-17T09:48:30.5799944Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 3.0891591 seconds., DetailsLevel: INFO
+2026-06-17T09:48:30.7028568Z Site started.
+2026-06-17T09:48:30.7029623Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 06/17/2026 09:48:30 (UTC), DetailsLevel: INFO
+2026-06-17T09:48:50.8117260Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 09:37:07 (UTC), DetailsLevel: INFO
+2026-06-17T09:48:50.8119604Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 09:37:07 (UTC), DetailsLevel: INFO
+2026-06-17T09:48:50.8120902Z Container is terminating. Grace period: 5 seconds.
+2026-06-17T09:48:50.8157602Z Stop and delete container. Retry count = 0
+2026-06-17T09:48:50.8160534Z Stopping container: fd37cf5b4b96_app-aichatbot-prod-cin-001.
+2026-06-17T09:48:52.5404067Z Deleting container: fd37cf5b4b96_app-aichatbot-prod-cin-001. Retry count = 0
+2026-06-17T09:48:52.6102419Z Container spec TerminationMessagePolicy  path 
+2026-06-17T09:48:52.6104005Z Container is terminated. Total time elapsed: 1798 ms.
+2026-06-17T09:48:54.3007888Z Site: app-aichatbot-prod-cin-001 stopped.
+2026-06-17T09:54:17.2179934Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T09:54:18.4454765Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T09:54:23.6602089Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T09:54:23.6603643Z Container start method called.
+2026-06-17T09:54:23.6604070Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T09:54:23.6605387Z Establishing network.
+2026-06-17T09:54:23.6606740Z Pulling image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0.
+2026-06-17T09:54:37.1559950Z Image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 is pulled from registry acraichatbotprodcin001.azurecr.io
+2026-06-17T09:54:37.1561664Z Container is starting.
+2026-06-17T09:54:37.1630451Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T09:54:37.1631829Z Establishing user namespace if not established already.
+2026-06-17T09:54:37.1632931Z Establishing network if not established already.
+2026-06-17T09:54:37.1636191Z Mounting volumes.
+2026-06-17T09:54:37.1641170Z Nested mountpoint 
+2026-06-17T09:54:37.1745257Z Nested mountpoint volatile/logs
+2026-06-17T09:54:37.1946412Z Nested mountpoint 
+2026-06-17T09:54:37.1953924Z Nested mountpoint 
+2026-06-17T09:54:37.2191923Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for app-aichatbot-prod-cin-001. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-17T09:54:37.2224166Z Creating container.
+2026-06-17T09:54:37.2228227Z Creating pipes for streaming container io.
+2026-06-17T09:54:37.2230907Z Creating stdout named pipe at /podr/container/pipe/23186f0c150c_app-aichatbot-prod-cin-001/stdout_eb934f8d44294e4689d5d557fc2bd4ed.
+2026-06-17T09:54:37.2251987Z Successfully created stdout named pipe at: /podr/container/pipe/23186f0c150c_app-aichatbot-prod-cin-001/stdout_eb934f8d44294e4689d5d557fc2bd4ed.
+2026-06-17T09:54:37.2263411Z Opening named pipe /podr/container/pipe/23186f0c150c_app-aichatbot-prod-cin-001/stdout_eb934f8d44294e4689d5d557fc2bd4ed for reading in non-blocking mode.
+2026-06-17T09:54:37.2278050Z Successfully opened named pipe: /podr/container/pipe/23186f0c150c_app-aichatbot-prod-cin-001/stdout_eb934f8d44294e4689d5d557fc2bd4ed.
+2026-06-17T09:54:37.2281019Z Successfully removed non-blocking flag from /podr/container/pipe/23186f0c150c_app-aichatbot-prod-cin-001/stdout_eb934f8d44294e4689d5d557fc2bd4ed.
+2026-06-17T09:54:37.2306529Z Creating stderr named pipe at /podr/container/pipe/23186f0c150c_app-aichatbot-prod-cin-001/stderr_ac079c3723004acda54b7659e5c83630.
+2026-06-17T09:54:37.2343738Z Successfully created stderr named pipe at: /podr/container/pipe/23186f0c150c_app-aichatbot-prod-cin-001/stderr_ac079c3723004acda54b7659e5c83630.
+2026-06-17T09:54:37.2383341Z Opening named pipe /podr/container/pipe/23186f0c150c_app-aichatbot-prod-cin-001/stderr_ac079c3723004acda54b7659e5c83630 for reading in non-blocking mode.
+2026-06-17T09:54:37.2387889Z Successfully opened named pipe: /podr/container/pipe/23186f0c150c_app-aichatbot-prod-cin-001/stderr_ac079c3723004acda54b7659e5c83630.
+2026-06-17T09:54:37.2394915Z Successfully removed non-blocking flag from /podr/container/pipe/23186f0c150c_app-aichatbot-prod-cin-001/stderr_ac079c3723004acda54b7659e5c83630.
+2026-06-17T09:54:37.2400799Z Overriding PORT environment variable with pre-calculated port: 8000.
+2026-06-17T09:54:37.2425194Z Setting value of PORT variable to 8000
+2026-06-17T09:54:37.2448268Z Creating container with image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 from registry: acraichatbotprodcin001.azurecr.io and fully qualified image name: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0
+2026-06-17T09:54:37.5086677Z Starting container: 23186f0c150c_app-aichatbot-prod-cin-001.
+2026-06-17T09:54:37.5258781Z Starting watchers and probes.
+2026-06-17T09:54:37.5265584Z Starting metrics collection.
+2026-06-17T09:54:37.5268801Z Container is running.
+2026-06-17T09:54:37.5275757Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T09:54:37.5648552Z Container start method finished after 13900 ms.
+2026-06-17T09:54:37.5701779Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T09:54:37.5707222Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-17T09:54:40.6624353Z Site startup probe succeeded after 3.0900497 seconds.
+2026-06-17T09:54:40.8175926Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 3.0900497 seconds., DetailsLevel: INFO
+2026-06-17T09:54:40.9350504Z Site started.
+2026-06-17T09:54:40.9351508Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 06/17/2026 09:54:40 (UTC), DetailsLevel: INFO
+2026-06-17T09:55:01.0126252Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 09:48:30 (UTC), DetailsLevel: INFO
+2026-06-17T09:55:01.0129029Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 09:48:30 (UTC), DetailsLevel: INFO
+2026-06-17T09:55:01.0130397Z Container is terminating. Grace period: 5 seconds.
+2026-06-17T09:55:01.0201393Z Stop and delete container. Retry count = 0
+2026-06-17T09:55:01.0202939Z Stopping container: 924f02c10c18_app-aichatbot-prod-cin-001.
+2026-06-17T09:55:02.7176419Z Deleting container: 924f02c10c18_app-aichatbot-prod-cin-001. Retry count = 0
+2026-06-17T09:55:02.8309319Z Container spec TerminationMessagePolicy  path 
+2026-06-17T09:55:02.8310577Z Container is terminated. Total time elapsed: 1817 ms.
+2026-06-17T09:55:03.1315484Z Site: app-aichatbot-prod-cin-001 stopped.
+2026-06-17T10:00:37.2189718Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T10:00:38.1161194Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T10:00:43.5496983Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T10:00:43.5499973Z Container start method called.
+2026-06-17T10:00:43.5500465Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T10:00:43.5502162Z Establishing network.
+2026-06-17T10:00:43.5503612Z Pulling image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0.
+2026-06-17T10:00:46.9693900Z Image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 is pulled from registry acraichatbotprodcin001.azurecr.io
+2026-06-17T10:00:46.9695248Z Container is starting.
+2026-06-17T10:00:46.9696203Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T10:00:46.9697527Z Establishing user namespace if not established already.
+2026-06-17T10:00:46.9698938Z Establishing network if not established already.
+2026-06-17T10:00:46.9700325Z Mounting volumes.
+2026-06-17T10:00:46.9737142Z Nested mountpoint 
+2026-06-17T10:00:46.9827750Z Nested mountpoint volatile/logs
+2026-06-17T10:00:46.9951819Z Nested mountpoint 
+2026-06-17T10:00:46.9993393Z Nested mountpoint 
+2026-06-17T10:00:47.0276237Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for app-aichatbot-prod-cin-001. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-17T10:00:47.0277622Z Creating container.
+2026-06-17T10:00:47.0278867Z Creating pipes for streaming container io.
+2026-06-17T10:00:47.0280082Z Creating stdout named pipe at /podr/container/pipe/e099dcd17346_app-aichatbot-prod-cin-001/stdout_799fd87d75fe45d0b21bd173ed5b7559.
+2026-06-17T10:00:47.0394281Z Successfully created stdout named pipe at: /podr/container/pipe/e099dcd17346_app-aichatbot-prod-cin-001/stdout_799fd87d75fe45d0b21bd173ed5b7559.
+2026-06-17T10:00:47.0395727Z Opening named pipe /podr/container/pipe/e099dcd17346_app-aichatbot-prod-cin-001/stdout_799fd87d75fe45d0b21bd173ed5b7559 for reading in non-blocking mode.
+2026-06-17T10:00:47.0414518Z Successfully opened named pipe: /podr/container/pipe/e099dcd17346_app-aichatbot-prod-cin-001/stdout_799fd87d75fe45d0b21bd173ed5b7559.
+2026-06-17T10:00:47.0415996Z Successfully removed non-blocking flag from /podr/container/pipe/e099dcd17346_app-aichatbot-prod-cin-001/stdout_799fd87d75fe45d0b21bd173ed5b7559.
+2026-06-17T10:00:47.0417569Z Creating stderr named pipe at /podr/container/pipe/e099dcd17346_app-aichatbot-prod-cin-001/stderr_81ec6f0991e048e59476ecf57e36fb2c.
+2026-06-17T10:00:47.0419333Z Successfully created stderr named pipe at: /podr/container/pipe/e099dcd17346_app-aichatbot-prod-cin-001/stderr_81ec6f0991e048e59476ecf57e36fb2c.
+2026-06-17T10:00:47.0420405Z Opening named pipe /podr/container/pipe/e099dcd17346_app-aichatbot-prod-cin-001/stderr_81ec6f0991e048e59476ecf57e36fb2c for reading in non-blocking mode.
+2026-06-17T10:00:47.0463264Z Successfully opened named pipe: /podr/container/pipe/e099dcd17346_app-aichatbot-prod-cin-001/stderr_81ec6f0991e048e59476ecf57e36fb2c.
+2026-06-17T10:00:47.0464458Z Successfully removed non-blocking flag from /podr/container/pipe/e099dcd17346_app-aichatbot-prod-cin-001/stderr_81ec6f0991e048e59476ecf57e36fb2c.
+2026-06-17T10:00:47.0469682Z Overriding PORT environment variable with pre-calculated port: 8000.
+2026-06-17T10:00:47.0471126Z Setting value of PORT variable to 8000
+2026-06-17T10:00:47.0472886Z Creating container with image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0 from registry: acraichatbotprodcin001.azurecr.io and fully qualified image name: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.0
+2026-06-17T10:00:47.3139856Z Starting container: e099dcd17346_app-aichatbot-prod-cin-001.
+2026-06-17T10:00:47.3457588Z Starting watchers and probes.
+2026-06-17T10:00:47.3494664Z Starting metrics collection.
+2026-06-17T10:00:47.3496475Z Container is running.
+2026-06-17T10:00:47.3497136Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T10:00:47.3954275Z Container start method finished after 3845 ms.
+2026-06-17T10:00:47.4064946Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T10:00:47.4067038Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-17T10:00:50.4913286Z Site startup probe succeeded after 3.0842168 seconds.
+2026-06-17T10:00:50.5571622Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 3.0842168 seconds., DetailsLevel: INFO
+2026-06-17T10:00:50.6796026Z Site started.
+2026-06-17T10:00:50.6825964Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 06/17/2026 10:00:50 (UTC), DetailsLevel: INFO
+2026-06-17T10:01:10.7559617Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 09:54:40 (UTC), DetailsLevel: INFO
+2026-06-17T10:01:10.7563237Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 09:54:40 (UTC), DetailsLevel: INFO
+2026-06-17T10:01:10.7565109Z Container is terminating. Grace period: 5 seconds.
+2026-06-17T10:01:10.7618225Z Stop and delete container. Retry count = 0
+2026-06-17T10:01:10.7622251Z Stopping container: 23186f0c150c_app-aichatbot-prod-cin-001.
+2026-06-17T10:01:12.5578029Z Deleting container: 23186f0c150c_app-aichatbot-prod-cin-001. Retry count = 0
+2026-06-17T10:01:12.6296590Z Container spec TerminationMessagePolicy  path 
+2026-06-17T10:01:12.6298236Z Container is terminated. Total time elapsed: 1873 ms.
+2026-06-17T10:01:12.8680427Z Site: app-aichatbot-prod-cin-001 stopped.
+2026-06-17T10:08:02.6104086Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T10:08:03.4670871Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T10:08:23.3821124Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T10:08:23.3823051Z Container start method called.
+2026-06-17T10:08:23.3823641Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.1 for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T10:08:23.3825074Z Establishing network.
+2026-06-17T10:08:23.3826737Z Pulling image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.1.
+2026-06-17T10:08:26.5309032Z Image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.1 is pulled from registry acraichatbotprodcin001.azurecr.io
+2026-06-17T10:08:26.5310277Z Container is starting.
+2026-06-17T10:08:26.5311276Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T10:08:26.5312750Z Establishing user namespace if not established already.
+2026-06-17T10:08:26.5314090Z Establishing network if not established already.
+2026-06-17T10:08:26.5315605Z Mounting volumes.
+2026-06-17T10:08:26.5317034Z Nested mountpoint 
+2026-06-17T10:08:26.5471836Z Nested mountpoint volatile/logs
+2026-06-17T10:08:26.5583653Z Nested mountpoint 
+2026-06-17T10:08:26.5590186Z Nested mountpoint 
+2026-06-17T10:08:26.5901467Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for app-aichatbot-prod-cin-001. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-17T10:08:26.5902803Z Creating container.
+2026-06-17T10:08:26.5942344Z Creating pipes for streaming container io.
+2026-06-17T10:08:26.5943914Z Creating stdout named pipe at /podr/container/pipe/45a8ac027858_app-aichatbot-prod-cin-001/stdout_42565d8b8f334d36a6378b7c03fe1dc7.
+2026-06-17T10:08:26.5963282Z Successfully created stdout named pipe at: /podr/container/pipe/45a8ac027858_app-aichatbot-prod-cin-001/stdout_42565d8b8f334d36a6378b7c03fe1dc7.
+2026-06-17T10:08:26.5967474Z Opening named pipe /podr/container/pipe/45a8ac027858_app-aichatbot-prod-cin-001/stdout_42565d8b8f334d36a6378b7c03fe1dc7 for reading in non-blocking mode.
+2026-06-17T10:08:26.5981612Z Successfully opened named pipe: /podr/container/pipe/45a8ac027858_app-aichatbot-prod-cin-001/stdout_42565d8b8f334d36a6378b7c03fe1dc7.
+2026-06-17T10:08:26.5996912Z Successfully removed non-blocking flag from /podr/container/pipe/45a8ac027858_app-aichatbot-prod-cin-001/stdout_42565d8b8f334d36a6378b7c03fe1dc7.
+2026-06-17T10:08:26.5999016Z Creating stderr named pipe at /podr/container/pipe/45a8ac027858_app-aichatbot-prod-cin-001/stderr_592f662175f94c588f244c3f2f0b4b6e.
+2026-06-17T10:08:26.6000977Z Successfully created stderr named pipe at: /podr/container/pipe/45a8ac027858_app-aichatbot-prod-cin-001/stderr_592f662175f94c588f244c3f2f0b4b6e.
+2026-06-17T10:08:26.6002388Z Opening named pipe /podr/container/pipe/45a8ac027858_app-aichatbot-prod-cin-001/stderr_592f662175f94c588f244c3f2f0b4b6e for reading in non-blocking mode.
+2026-06-17T10:08:26.6003738Z Successfully opened named pipe: /podr/container/pipe/45a8ac027858_app-aichatbot-prod-cin-001/stderr_592f662175f94c588f244c3f2f0b4b6e.
+2026-06-17T10:08:26.6004916Z Successfully removed non-blocking flag from /podr/container/pipe/45a8ac027858_app-aichatbot-prod-cin-001/stderr_592f662175f94c588f244c3f2f0b4b6e.
+2026-06-17T10:08:26.6006239Z Overriding PORT environment variable with pre-calculated port: 8000.
+2026-06-17T10:08:26.6007481Z Setting value of PORT variable to 8000
+2026-06-17T10:08:26.6009262Z Creating container with image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.1 from registry: acraichatbotprodcin001.azurecr.io and fully qualified image name: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.1
+2026-06-17T10:08:26.8425383Z Starting container: 45a8ac027858_app-aichatbot-prod-cin-001.
+2026-06-17T10:08:26.8566276Z Starting watchers and probes.
+2026-06-17T10:08:26.8626978Z Starting metrics collection.
+2026-06-17T10:08:26.8635573Z Container is running.
+2026-06-17T10:08:26.8639299Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T10:08:26.8997806Z Container start method finished after 3517 ms.
+2026-06-17T10:08:26.8999820Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T10:08:26.9000054Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-17T10:08:31.0044024Z Site startup probe succeeded after 4.1039968 seconds.
+2026-06-17T10:08:31.0722275Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 4.1039968 seconds., DetailsLevel: INFO
+2026-06-17T10:08:31.1299262Z Site started.
+2026-06-17T10:08:31.1300266Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 06/17/2026 10:08:31 (UTC), DetailsLevel: INFO
+2026-06-17T10:08:51.3882202Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 10:00:50 (UTC), DetailsLevel: INFO
+2026-06-17T10:08:51.3886519Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 10:00:50 (UTC), DetailsLevel: INFO
+2026-06-17T10:08:51.3887805Z Container is terminating. Grace period: 5 seconds.
+2026-06-17T10:08:52.1542063Z Stop and delete container. Retry count = 0
+2026-06-17T10:08:52.1543524Z Stopping container: e099dcd17346_app-aichatbot-prod-cin-001.
+2026-06-17T10:08:56.2179519Z Deleting container: e099dcd17346_app-aichatbot-prod-cin-001. Retry count = 0
+2026-06-17T10:08:56.2958879Z Container spec TerminationMessagePolicy  path 
+2026-06-17T10:08:56.3002459Z Container is terminated. Total time elapsed: 4911 ms.
+2026-06-17T10:08:56.5478683Z Site: app-aichatbot-prod-cin-001 stopped.
+2026-06-17T10:08:57.0829392Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T10:08:57.8399445Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T10:09:16.6314486Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T10:09:16.6315808Z Container start method called.
+2026-06-17T10:09:16.6316094Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.1 for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T10:09:16.6316967Z Establishing network.
+2026-06-17T10:09:16.6318017Z Pulling image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.1.
+2026-06-17T10:09:29.3897645Z Container is starting.
+2026-06-17T10:09:29.4110420Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T10:09:29.4112718Z Establishing user namespace if not established already.
+2026-06-17T10:09:29.4114250Z Establishing network if not established already.
+2026-06-17T10:09:29.4115863Z Mounting volumes.
+2026-06-17T10:09:29.4117496Z Nested mountpoint 
+2026-06-17T10:09:29.4231547Z Nested mountpoint volatile/logs
+2026-06-17T10:09:29.4304148Z Nested mountpoint 
+2026-06-17T10:09:29.4312160Z Nested mountpoint 
+2026-06-17T10:09:29.4690257Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for app-aichatbot-prod-cin-001. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-17T10:09:29.4691523Z Creating container.
+2026-06-17T10:09:29.4692629Z Creating pipes for streaming container io.
+2026-06-17T10:09:29.4693856Z Creating stdout named pipe at /podr/container/pipe/c8bbc179a69d_app-aichatbot-prod-cin-001/stdout_972105a812b34c4c9acd6e2fe25bd30f.
+2026-06-17T10:09:29.4778685Z Successfully created stdout named pipe at: /podr/container/pipe/c8bbc179a69d_app-aichatbot-prod-cin-001/stdout_972105a812b34c4c9acd6e2fe25bd30f.
+2026-06-17T10:09:29.4782611Z Opening named pipe /podr/container/pipe/c8bbc179a69d_app-aichatbot-prod-cin-001/stdout_972105a812b34c4c9acd6e2fe25bd30f for reading in non-blocking mode.
+2026-06-17T10:09:29.4787753Z Successfully opened named pipe: /podr/container/pipe/c8bbc179a69d_app-aichatbot-prod-cin-001/stdout_972105a812b34c4c9acd6e2fe25bd30f.
+2026-06-17T10:09:29.4813606Z Successfully removed non-blocking flag from /podr/container/pipe/c8bbc179a69d_app-aichatbot-prod-cin-001/stdout_972105a812b34c4c9acd6e2fe25bd30f.
+2026-06-17T10:09:29.4818850Z Creating stderr named pipe at /podr/container/pipe/c8bbc179a69d_app-aichatbot-prod-cin-001/stderr_ab958757ada5482092998f1ffc579143.
+2026-06-17T10:09:29.4848461Z Successfully created stderr named pipe at: /podr/container/pipe/c8bbc179a69d_app-aichatbot-prod-cin-001/stderr_ab958757ada5482092998f1ffc579143.
+2026-06-17T10:09:29.4852891Z Opening named pipe /podr/container/pipe/c8bbc179a69d_app-aichatbot-prod-cin-001/stderr_ab958757ada5482092998f1ffc579143 for reading in non-blocking mode.
+2026-06-17T10:09:29.4875998Z Successfully opened named pipe: /podr/container/pipe/c8bbc179a69d_app-aichatbot-prod-cin-001/stderr_ab958757ada5482092998f1ffc579143.
+2026-06-17T10:09:29.4881385Z Successfully removed non-blocking flag from /podr/container/pipe/c8bbc179a69d_app-aichatbot-prod-cin-001/stderr_ab958757ada5482092998f1ffc579143.
+2026-06-17T10:09:29.4914865Z Overriding PORT environment variable with pre-calculated port: 8000.
+2026-06-17T10:09:29.4916218Z Setting value of PORT variable to 8000
+2026-06-17T10:09:29.4918131Z Creating container with image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.1 from registry: acraichatbotprodcin001.azurecr.io and fully qualified image name: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.1
+2026-06-17T10:09:29.7259186Z Starting container: c8bbc179a69d_app-aichatbot-prod-cin-001.
+2026-06-17T10:09:29.7412592Z Starting watchers and probes.
+2026-06-17T10:09:29.7489239Z Starting metrics collection.
+2026-06-17T10:09:29.7494772Z Container is running.
+2026-06-17T10:09:29.7495627Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T10:09:29.7691495Z Container start method finished after 13137 ms.
+2026-06-17T10:09:29.7693224Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T10:09:29.7693450Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-17T10:09:32.8749035Z Site startup probe succeeded after 3.103433 seconds.
+2026-06-17T10:09:32.9499366Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 3.103433 seconds., DetailsLevel: INFO
+2026-06-17T10:09:33.0712550Z Site started.
+2026-06-17T10:09:33.0713527Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 06/17/2026 10:09:33 (UTC), DetailsLevel: INFO
+2026-06-17T10:09:53.1651523Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 10:08:31 (UTC), DetailsLevel: INFO
+2026-06-17T10:09:53.1654140Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 10:08:31 (UTC), DetailsLevel: INFO
+2026-06-17T10:09:53.1655574Z Container is terminating. Grace period: 5 seconds.
+2026-06-17T10:09:53.1929394Z Stop and delete container. Retry count = 0
+2026-06-17T10:09:53.1930680Z Stopping container: 45a8ac027858_app-aichatbot-prod-cin-001.
+2026-06-17T10:09:54.8361521Z Deleting container: 45a8ac027858_app-aichatbot-prod-cin-001. Retry count = 0
+2026-06-17T10:09:54.9082976Z Container spec TerminationMessagePolicy  path 
+2026-06-17T10:09:54.9088270Z Container is terminated. Total time elapsed: 1743 ms.
+2026-06-17T10:09:56.7145797Z Site: app-aichatbot-prod-cin-001 stopped.
+2026-06-17T10:33:00.0401478Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T10:33:01.8764921Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T10:33:09.0784318Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T10:33:09.0794167Z Container start method called.
+2026-06-17T10:33:09.0795175Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.2 for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T10:33:09.0796695Z Establishing network.
+2026-06-17T10:33:09.0805739Z Pulling image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.2.
+2026-06-17T10:33:13.7666588Z Image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.2 is pulled from registry acraichatbotprodcin001.azurecr.io
+2026-06-17T10:33:13.7667971Z Container is starting.
+2026-06-17T10:33:13.7736692Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T10:33:13.7741902Z Establishing user namespace if not established already.
+2026-06-17T10:33:13.7744476Z Establishing network if not established already.
+2026-06-17T10:33:13.7753265Z Mounting volumes.
+2026-06-17T10:33:13.7758155Z Nested mountpoint 
+2026-06-17T10:33:13.7824332Z Nested mountpoint volatile/logs
+2026-06-17T10:33:13.7933983Z Nested mountpoint 
+2026-06-17T10:33:13.7942334Z Nested mountpoint 
+2026-06-17T10:33:13.8269396Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for app-aichatbot-prod-cin-001. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-17T10:33:13.8270693Z Creating container.
+2026-06-17T10:33:13.8271752Z Creating pipes for streaming container io.
+2026-06-17T10:33:13.8272904Z Creating stdout named pipe at /podr/container/pipe/c5d3b78ef4ec_app-aichatbot-prod-cin-001/stdout_5f3775f1bf694b1ebdf9bbd371f4426b.
+2026-06-17T10:33:13.8300767Z Successfully created stdout named pipe at: /podr/container/pipe/c5d3b78ef4ec_app-aichatbot-prod-cin-001/stdout_5f3775f1bf694b1ebdf9bbd371f4426b.
+2026-06-17T10:33:13.8315010Z Opening named pipe /podr/container/pipe/c5d3b78ef4ec_app-aichatbot-prod-cin-001/stdout_5f3775f1bf694b1ebdf9bbd371f4426b for reading in non-blocking mode.
+2026-06-17T10:33:13.8318078Z Successfully opened named pipe: /podr/container/pipe/c5d3b78ef4ec_app-aichatbot-prod-cin-001/stdout_5f3775f1bf694b1ebdf9bbd371f4426b.
+2026-06-17T10:33:13.8332650Z Successfully removed non-blocking flag from /podr/container/pipe/c5d3b78ef4ec_app-aichatbot-prod-cin-001/stdout_5f3775f1bf694b1ebdf9bbd371f4426b.
+2026-06-17T10:33:13.8352933Z Creating stderr named pipe at /podr/container/pipe/c5d3b78ef4ec_app-aichatbot-prod-cin-001/stderr_859a6239e5744d61be9ae90eabec309f.
+2026-06-17T10:33:13.8374631Z Successfully created stderr named pipe at: /podr/container/pipe/c5d3b78ef4ec_app-aichatbot-prod-cin-001/stderr_859a6239e5744d61be9ae90eabec309f.
+2026-06-17T10:33:13.8384350Z Opening named pipe /podr/container/pipe/c5d3b78ef4ec_app-aichatbot-prod-cin-001/stderr_859a6239e5744d61be9ae90eabec309f for reading in non-blocking mode.
+2026-06-17T10:33:13.8403030Z Successfully opened named pipe: /podr/container/pipe/c5d3b78ef4ec_app-aichatbot-prod-cin-001/stderr_859a6239e5744d61be9ae90eabec309f.
+2026-06-17T10:33:13.8406295Z Successfully removed non-blocking flag from /podr/container/pipe/c5d3b78ef4ec_app-aichatbot-prod-cin-001/stderr_859a6239e5744d61be9ae90eabec309f.
+2026-06-17T10:33:13.8437076Z Overriding PORT environment variable with pre-calculated port: 8000.
+2026-06-17T10:33:13.8438341Z Setting value of PORT variable to 8000
+2026-06-17T10:33:13.8440508Z Creating container with image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.2 from registry: acraichatbotprodcin001.azurecr.io and fully qualified image name: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.2
+2026-06-17T10:33:14.1549349Z Starting container: c5d3b78ef4ec_app-aichatbot-prod-cin-001.
+2026-06-17T10:33:14.1712530Z Starting watchers and probes.
+2026-06-17T10:33:14.1718049Z Starting metrics collection.
+2026-06-17T10:33:14.1719802Z Container is running.
+2026-06-17T10:33:14.1720408Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T10:33:14.2299323Z Container start method finished after 5150 ms.
+2026-06-17T10:33:14.2311022Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T10:33:14.2318467Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-17T10:33:18.3400879Z Site startup probe succeeded after 4.1077786 seconds.
+2026-06-17T10:33:18.4164213Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 4.1077786 seconds., DetailsLevel: INFO
+2026-06-17T10:33:18.4947228Z Site started.
+2026-06-17T10:33:18.4948144Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 06/17/2026 10:33:18 (UTC), DetailsLevel: INFO
+2026-06-17T10:33:38.5937868Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 10:09:33 (UTC), DetailsLevel: INFO
+2026-06-17T10:33:38.5942776Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 10:09:33 (UTC), DetailsLevel: INFO
+2026-06-17T10:33:38.5944326Z Container is terminating. Grace period: 5 seconds.
+2026-06-17T10:33:38.5982021Z Stop and delete container. Retry count = 0
+2026-06-17T10:33:38.5983217Z Stopping container: c8bbc179a69d_app-aichatbot-prod-cin-001.
+2026-06-17T10:33:40.3752850Z Deleting container: c8bbc179a69d_app-aichatbot-prod-cin-001. Retry count = 0
+2026-06-17T10:33:40.4503583Z Container spec TerminationMessagePolicy  path 
+2026-06-17T10:33:40.4505188Z Container is terminated. Total time elapsed: 1855 ms.
+2026-06-17T10:33:42.0748551Z Site: app-aichatbot-prod-cin-001 stopped.
+2026-06-17T10:36:27.2287166Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T10:36:28.4938951Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T10:36:33.9290392Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T10:36:33.9292113Z Container start method called.
+2026-06-17T10:36:33.9292686Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.2 for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T10:36:33.9294053Z Establishing network.
+2026-06-17T10:36:33.9295491Z Pulling image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.2.
+2026-06-17T10:36:36.3233202Z Container is starting.
+2026-06-17T10:36:36.3242259Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T10:36:36.3246274Z Establishing user namespace if not established already.
+2026-06-17T10:36:36.3248379Z Establishing network if not established already.
+2026-06-17T10:36:36.3250059Z Mounting volumes.
+2026-06-17T10:36:36.3252209Z Nested mountpoint 
+2026-06-17T10:36:36.3347123Z Nested mountpoint volatile/logs
+2026-06-17T10:36:36.3482549Z Nested mountpoint 
+2026-06-17T10:36:36.3511103Z Nested mountpoint 
+2026-06-17T10:36:36.3695743Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for app-aichatbot-prod-cin-001. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-17T10:36:36.4137737Z Creating container.
+2026-06-17T10:36:36.4146427Z Creating pipes for streaming container io.
+2026-06-17T10:36:36.4151570Z Creating stdout named pipe at /podr/container/pipe/7ffac78303ea_app-aichatbot-prod-cin-001/stdout_d2d7592e9b7d4a228a3df56eae8dd144.
+2026-06-17T10:36:36.4210660Z Successfully created stdout named pipe at: /podr/container/pipe/7ffac78303ea_app-aichatbot-prod-cin-001/stdout_d2d7592e9b7d4a228a3df56eae8dd144.
+2026-06-17T10:36:36.4213279Z Opening named pipe /podr/container/pipe/7ffac78303ea_app-aichatbot-prod-cin-001/stdout_d2d7592e9b7d4a228a3df56eae8dd144 for reading in non-blocking mode.
+2026-06-17T10:36:36.4214809Z Successfully opened named pipe: /podr/container/pipe/7ffac78303ea_app-aichatbot-prod-cin-001/stdout_d2d7592e9b7d4a228a3df56eae8dd144.
+2026-06-17T10:36:36.4216162Z Successfully removed non-blocking flag from /podr/container/pipe/7ffac78303ea_app-aichatbot-prod-cin-001/stdout_d2d7592e9b7d4a228a3df56eae8dd144.
+2026-06-17T10:36:36.4218945Z Creating stderr named pipe at /podr/container/pipe/7ffac78303ea_app-aichatbot-prod-cin-001/stderr_fd54f72db8b6435ea3c56fd9570cbef0.
+2026-06-17T10:36:36.4224257Z Successfully created stderr named pipe at: /podr/container/pipe/7ffac78303ea_app-aichatbot-prod-cin-001/stderr_fd54f72db8b6435ea3c56fd9570cbef0.
+2026-06-17T10:36:36.4226170Z Opening named pipe /podr/container/pipe/7ffac78303ea_app-aichatbot-prod-cin-001/stderr_fd54f72db8b6435ea3c56fd9570cbef0 for reading in non-blocking mode.
+2026-06-17T10:36:36.4228027Z Successfully opened named pipe: /podr/container/pipe/7ffac78303ea_app-aichatbot-prod-cin-001/stderr_fd54f72db8b6435ea3c56fd9570cbef0.
+2026-06-17T10:36:36.4229451Z Successfully removed non-blocking flag from /podr/container/pipe/7ffac78303ea_app-aichatbot-prod-cin-001/stderr_fd54f72db8b6435ea3c56fd9570cbef0.
+2026-06-17T10:36:36.4246824Z Overriding PORT environment variable with pre-calculated port: 8000.
+2026-06-17T10:36:36.4248809Z Setting value of PORT variable to 8000
+2026-06-17T10:36:36.4250952Z Creating container with image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.2 from registry: acraichatbotprodcin001.azurecr.io and fully qualified image name: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.2
+2026-06-17T10:36:36.6816345Z Starting container: 7ffac78303ea_app-aichatbot-prod-cin-001.
+2026-06-17T10:36:36.7004007Z Starting watchers and probes.
+2026-06-17T10:36:36.7006413Z Starting metrics collection.
+2026-06-17T10:36:36.7011080Z Container is running.
+2026-06-17T10:36:36.7011762Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T10:36:36.7271132Z Container start method finished after 2792 ms.
+2026-06-17T10:36:36.7273469Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T10:36:36.7273743Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-17T10:36:39.8183478Z Site startup probe succeeded after 3.0825721 seconds.
+2026-06-17T10:36:39.9041213Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 3.0825721 seconds., DetailsLevel: INFO
+2026-06-17T10:36:40.0606226Z Site started.
+2026-06-17T10:36:40.0607275Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 06/17/2026 10:36:40 (UTC), DetailsLevel: INFO
+2026-06-17T10:37:00.1336271Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 10:33:18 (UTC), DetailsLevel: INFO
+2026-06-17T10:37:00.1344762Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 10:33:18 (UTC), DetailsLevel: INFO
+2026-06-17T10:37:00.1346558Z Container is terminating. Grace period: 5 seconds.
+2026-06-17T10:37:00.1383074Z Stop and delete container. Retry count = 0
+2026-06-17T10:37:00.1387986Z Stopping container: c5d3b78ef4ec_app-aichatbot-prod-cin-001.
+2026-06-17T10:37:02.0237908Z Deleting container: c5d3b78ef4ec_app-aichatbot-prod-cin-001. Retry count = 0
+2026-06-17T10:37:02.2573269Z Container spec TerminationMessagePolicy  path 
+2026-06-17T10:37:02.2574775Z Container is terminated. Total time elapsed: 2122 ms.
+2026-06-17T10:37:02.5099708Z Site: app-aichatbot-prod-cin-001 stopped.
+2026-06-17T10:48:31.5703417Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T10:48:33.1900259Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T10:48:39.0805675Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T10:48:39.0807761Z Container start method called.
+2026-06-17T10:48:39.0808268Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.3 for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T10:48:39.0809537Z Establishing network.
+2026-06-17T10:48:39.0810887Z Pulling image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.3.
+2026-06-17T10:48:42.4522201Z Image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.3 is pulled from registry acraichatbotprodcin001.azurecr.io
+2026-06-17T10:48:42.4523529Z Container is starting.
+2026-06-17T10:48:42.4632039Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T10:48:42.4634445Z Establishing user namespace if not established already.
+2026-06-17T10:48:42.4636121Z Establishing network if not established already.
+2026-06-17T10:48:42.4639937Z Mounting volumes.
+2026-06-17T10:48:42.4646315Z Nested mountpoint 
+2026-06-17T10:48:42.4744850Z Nested mountpoint volatile/logs
+2026-06-17T10:48:42.4869062Z Nested mountpoint 
+2026-06-17T10:48:42.4892861Z Nested mountpoint 
+2026-06-17T10:48:42.5055624Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for app-aichatbot-prod-cin-001. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-17T10:48:42.5057013Z Creating container.
+2026-06-17T10:48:42.5058268Z Creating pipes for streaming container io.
+2026-06-17T10:48:42.5059523Z Creating stdout named pipe at /podr/container/pipe/56200c25f81b_app-aichatbot-prod-cin-001/stdout_1d0f13180c4142b7b09a76ecc8bc152f.
+2026-06-17T10:48:42.5143489Z Successfully created stdout named pipe at: /podr/container/pipe/56200c25f81b_app-aichatbot-prod-cin-001/stdout_1d0f13180c4142b7b09a76ecc8bc152f.
+2026-06-17T10:48:42.5144727Z Opening named pipe /podr/container/pipe/56200c25f81b_app-aichatbot-prod-cin-001/stdout_1d0f13180c4142b7b09a76ecc8bc152f for reading in non-blocking mode.
+2026-06-17T10:48:42.5146369Z Successfully opened named pipe: /podr/container/pipe/56200c25f81b_app-aichatbot-prod-cin-001/stdout_1d0f13180c4142b7b09a76ecc8bc152f.
+2026-06-17T10:48:42.5147670Z Successfully removed non-blocking flag from /podr/container/pipe/56200c25f81b_app-aichatbot-prod-cin-001/stdout_1d0f13180c4142b7b09a76ecc8bc152f.
+2026-06-17T10:48:42.5149677Z Creating stderr named pipe at /podr/container/pipe/56200c25f81b_app-aichatbot-prod-cin-001/stderr_c1225f3667fd4b1dafd6f0c56ff2c40f.
+2026-06-17T10:48:42.5151578Z Successfully created stderr named pipe at: /podr/container/pipe/56200c25f81b_app-aichatbot-prod-cin-001/stderr_c1225f3667fd4b1dafd6f0c56ff2c40f.
+2026-06-17T10:48:42.5153063Z Opening named pipe /podr/container/pipe/56200c25f81b_app-aichatbot-prod-cin-001/stderr_c1225f3667fd4b1dafd6f0c56ff2c40f for reading in non-blocking mode.
+2026-06-17T10:48:42.5154467Z Successfully opened named pipe: /podr/container/pipe/56200c25f81b_app-aichatbot-prod-cin-001/stderr_c1225f3667fd4b1dafd6f0c56ff2c40f.
+2026-06-17T10:48:42.5155645Z Successfully removed non-blocking flag from /podr/container/pipe/56200c25f81b_app-aichatbot-prod-cin-001/stderr_c1225f3667fd4b1dafd6f0c56ff2c40f.
+2026-06-17T10:48:42.5157512Z Overriding PORT environment variable with pre-calculated port: 8000.
+2026-06-17T10:48:42.5158748Z Setting value of PORT variable to 8000
+2026-06-17T10:48:42.5160754Z Creating container with image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.3 from registry: acraichatbotprodcin001.azurecr.io and fully qualified image name: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.3
+2026-06-17T10:48:42.8608820Z Starting container: 56200c25f81b_app-aichatbot-prod-cin-001.
+2026-06-17T10:48:42.8859985Z Starting watchers and probes.
+2026-06-17T10:48:42.8880390Z Starting metrics collection.
+2026-06-17T10:48:42.8899102Z Container is running.
+2026-06-17T10:48:42.8900411Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T10:48:42.9120407Z Container start method finished after 3831 ms.
+2026-06-17T10:48:42.9122238Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T10:48:42.9122459Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-17T10:48:46.0055536Z Site startup probe succeeded after 3.0929346 seconds.
+2026-06-17T10:48:46.0768473Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 3.0929346 seconds., DetailsLevel: INFO
+2026-06-17T10:48:46.2379341Z Site started.
+2026-06-17T10:48:46.2380828Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 06/17/2026 10:48:46 (UTC), DetailsLevel: INFO
+2026-06-17T10:49:06.3526881Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 10:36:40 (UTC), DetailsLevel: INFO
+2026-06-17T10:49:06.3529929Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 10:36:40 (UTC), DetailsLevel: INFO
+2026-06-17T10:49:06.3531363Z Container is terminating. Grace period: 5 seconds.
+2026-06-17T10:49:06.3559864Z Stop and delete container. Retry count = 0
+2026-06-17T10:49:06.3561077Z Stopping container: 7ffac78303ea_app-aichatbot-prod-cin-001.
+2026-06-17T10:49:08.0652952Z Deleting container: 7ffac78303ea_app-aichatbot-prod-cin-001. Retry count = 0
+2026-06-17T10:49:08.1403124Z Container spec TerminationMessagePolicy  path 
+2026-06-17T10:49:08.1404727Z Container is terminated. Total time elapsed: 1787 ms.
+2026-06-17T10:49:08.3870254Z Site: app-aichatbot-prod-cin-001 stopped.
+2026-06-17T10:49:17.1991249Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T10:49:18.7080159Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T10:49:39.8655496Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T10:49:39.8657203Z Container start method called.
+2026-06-17T10:49:39.8657668Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.3 for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T10:49:39.8659321Z Establishing network.
+2026-06-17T10:49:39.8686495Z Pulling image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.3.
+2026-06-17T10:49:43.7944998Z Container is starting.
+2026-06-17T10:49:43.7961701Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T10:49:43.7964020Z Establishing user namespace if not established already.
+2026-06-17T10:49:43.7965777Z Establishing network if not established already.
+2026-06-17T10:49:43.7967261Z Mounting volumes.
+2026-06-17T10:49:43.7968945Z Nested mountpoint 
+2026-06-17T10:49:43.8055469Z Nested mountpoint volatile/logs
+2026-06-17T10:49:43.8168988Z Nested mountpoint 
+2026-06-17T10:49:43.8177371Z Nested mountpoint 
+2026-06-17T10:49:43.8431779Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for app-aichatbot-prod-cin-001. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-17T10:49:43.8433087Z Creating container.
+2026-06-17T10:49:43.8434197Z Creating pipes for streaming container io.
+2026-06-17T10:49:43.8435196Z Creating stdout named pipe at /podr/container/pipe/613d8d24a6b4_app-aichatbot-prod-cin-001/stdout_eedf4914eba34cc2966e37fb4ff49c57.
+2026-06-17T10:49:43.8625392Z Successfully created stdout named pipe at: /podr/container/pipe/613d8d24a6b4_app-aichatbot-prod-cin-001/stdout_eedf4914eba34cc2966e37fb4ff49c57.
+2026-06-17T10:49:43.8626743Z Opening named pipe /podr/container/pipe/613d8d24a6b4_app-aichatbot-prod-cin-001/stdout_eedf4914eba34cc2966e37fb4ff49c57 for reading in non-blocking mode.
+2026-06-17T10:49:43.8628267Z Successfully opened named pipe: /podr/container/pipe/613d8d24a6b4_app-aichatbot-prod-cin-001/stdout_eedf4914eba34cc2966e37fb4ff49c57.
+2026-06-17T10:49:43.8649644Z Successfully removed non-blocking flag from /podr/container/pipe/613d8d24a6b4_app-aichatbot-prod-cin-001/stdout_eedf4914eba34cc2966e37fb4ff49c57.
+2026-06-17T10:49:43.8679831Z Creating stderr named pipe at /podr/container/pipe/613d8d24a6b4_app-aichatbot-prod-cin-001/stderr_7334b17e07e94874a5a131527511e08b.
+2026-06-17T10:49:43.8701513Z Successfully created stderr named pipe at: /podr/container/pipe/613d8d24a6b4_app-aichatbot-prod-cin-001/stderr_7334b17e07e94874a5a131527511e08b.
+2026-06-17T10:49:43.8703191Z Opening named pipe /podr/container/pipe/613d8d24a6b4_app-aichatbot-prod-cin-001/stderr_7334b17e07e94874a5a131527511e08b for reading in non-blocking mode.
+2026-06-17T10:49:43.8704915Z Successfully opened named pipe: /podr/container/pipe/613d8d24a6b4_app-aichatbot-prod-cin-001/stderr_7334b17e07e94874a5a131527511e08b.
+2026-06-17T10:49:43.8752405Z Successfully removed non-blocking flag from /podr/container/pipe/613d8d24a6b4_app-aichatbot-prod-cin-001/stderr_7334b17e07e94874a5a131527511e08b.
+2026-06-17T10:49:43.8755209Z Overriding PORT environment variable with pre-calculated port: 8000.
+2026-06-17T10:49:43.8756785Z Setting value of PORT variable to 8000
+2026-06-17T10:49:43.8758902Z Creating container with image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.3 from registry: acraichatbotprodcin001.azurecr.io and fully qualified image name: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.3
+2026-06-17T10:49:44.1624971Z Starting container: 613d8d24a6b4_app-aichatbot-prod-cin-001.
+2026-06-17T10:49:44.1999038Z Starting watchers and probes.
+2026-06-17T10:49:44.2001480Z Starting metrics collection.
+2026-06-17T10:49:44.2003145Z Container is running.
+2026-06-17T10:49:44.2003789Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T10:49:44.2677823Z Container start method finished after 4401 ms.
+2026-06-17T10:49:44.2679682Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T10:49:44.2679922Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-17T10:49:47.3537369Z Site startup probe succeeded after 3.0847017 seconds.
+2026-06-17T10:49:47.4354550Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 3.0847017 seconds., DetailsLevel: INFO
+2026-06-17T10:49:47.5563844Z Site started.
+2026-06-17T10:49:47.5564841Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 06/17/2026 10:49:47 (UTC), DetailsLevel: INFO
+2026-06-17T10:50:07.6463601Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 10:48:46 (UTC), DetailsLevel: INFO
+2026-06-17T10:50:07.6466657Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 10:48:46 (UTC), DetailsLevel: INFO
+2026-06-17T10:50:07.6471987Z Container is terminating. Grace period: 5 seconds.
+2026-06-17T10:50:07.6506535Z Stop and delete container. Retry count = 0
+2026-06-17T10:50:07.6509262Z Stopping container: 56200c25f81b_app-aichatbot-prod-cin-001.
+2026-06-17T10:50:09.4012213Z Deleting container: 56200c25f81b_app-aichatbot-prod-cin-001. Retry count = 0
+2026-06-17T10:50:09.4979446Z Container spec TerminationMessagePolicy  path 
+2026-06-17T10:50:09.4982466Z Container is terminated. Total time elapsed: 1850 ms.
+2026-06-17T10:50:09.7234654Z Site: app-aichatbot-prod-cin-001 stopped.
+2026-06-17T11:45:22.0950549Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T11:45:23.2769298Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T11:45:43.5749234Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T11:45:43.5751289Z Container start method called.
+2026-06-17T11:45:43.5751922Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.4 for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T11:45:43.5753296Z Establishing network.
+2026-06-17T11:45:43.5754821Z Pulling image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.4.
+2026-06-17T11:45:46.4747135Z Image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.4 is pulled from registry acraichatbotprodcin001.azurecr.io
+2026-06-17T11:45:46.4748461Z Container is starting.
+2026-06-17T11:45:46.4749197Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T11:45:46.4750530Z Establishing user namespace if not established already.
+2026-06-17T11:45:46.4751862Z Establishing network if not established already.
+2026-06-17T11:45:46.4753281Z Mounting volumes.
+2026-06-17T11:45:46.4754701Z Nested mountpoint 
+2026-06-17T11:45:46.4805356Z Nested mountpoint volatile/logs
+2026-06-17T11:45:46.4867518Z Nested mountpoint 
+2026-06-17T11:45:46.4875284Z Nested mountpoint 
+2026-06-17T11:45:46.5068330Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for app-aichatbot-prod-cin-001. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-17T11:45:46.5119872Z Creating container.
+2026-06-17T11:45:46.5121573Z Creating pipes for streaming container io.
+2026-06-17T11:45:46.5122846Z Creating stdout named pipe at /podr/container/pipe/b37a35ca3c56_app-aichatbot-prod-cin-001/stdout_86f551648e7641aab53b2fb95d0f0956.
+2026-06-17T11:45:46.5128875Z Successfully created stdout named pipe at: /podr/container/pipe/b37a35ca3c56_app-aichatbot-prod-cin-001/stdout_86f551648e7641aab53b2fb95d0f0956.
+2026-06-17T11:45:46.5130006Z Opening named pipe /podr/container/pipe/b37a35ca3c56_app-aichatbot-prod-cin-001/stdout_86f551648e7641aab53b2fb95d0f0956 for reading in non-blocking mode.
+2026-06-17T11:45:46.5131334Z Successfully opened named pipe: /podr/container/pipe/b37a35ca3c56_app-aichatbot-prod-cin-001/stdout_86f551648e7641aab53b2fb95d0f0956.
+2026-06-17T11:45:46.5132496Z Successfully removed non-blocking flag from /podr/container/pipe/b37a35ca3c56_app-aichatbot-prod-cin-001/stdout_86f551648e7641aab53b2fb95d0f0956.
+2026-06-17T11:45:46.5134049Z Creating stderr named pipe at /podr/container/pipe/b37a35ca3c56_app-aichatbot-prod-cin-001/stderr_424d51d8f7c14fb5b128fa8745f335c3.
+2026-06-17T11:45:46.5135773Z Successfully created stderr named pipe at: /podr/container/pipe/b37a35ca3c56_app-aichatbot-prod-cin-001/stderr_424d51d8f7c14fb5b128fa8745f335c3.
+2026-06-17T11:45:46.5136945Z Opening named pipe /podr/container/pipe/b37a35ca3c56_app-aichatbot-prod-cin-001/stderr_424d51d8f7c14fb5b128fa8745f335c3 for reading in non-blocking mode.
+2026-06-17T11:45:46.5138300Z Successfully opened named pipe: /podr/container/pipe/b37a35ca3c56_app-aichatbot-prod-cin-001/stderr_424d51d8f7c14fb5b128fa8745f335c3.
+2026-06-17T11:45:46.5139396Z Successfully removed non-blocking flag from /podr/container/pipe/b37a35ca3c56_app-aichatbot-prod-cin-001/stderr_424d51d8f7c14fb5b128fa8745f335c3.
+2026-06-17T11:45:46.5217083Z Overriding PORT environment variable with pre-calculated port: 8000.
+2026-06-17T11:45:46.5218680Z Setting value of PORT variable to 8000
+2026-06-17T11:45:46.5220462Z Creating container with image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.4 from registry: acraichatbotprodcin001.azurecr.io and fully qualified image name: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.4
+2026-06-17T11:45:46.7669604Z Starting container: b37a35ca3c56_app-aichatbot-prod-cin-001.
+2026-06-17T11:45:46.7848531Z Starting watchers and probes.
+2026-06-17T11:45:46.7851015Z Starting metrics collection.
+2026-06-17T11:45:46.7852089Z Container is running.
+2026-06-17T11:45:46.7852578Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T11:45:46.8254188Z Container start method finished after 3249 ms.
+2026-06-17T11:45:46.8263261Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T11:45:46.8263549Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-17T11:45:49.9547959Z Site startup probe succeeded after 3.1261406 seconds.
+2026-06-17T11:45:50.1325144Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 3.1261406 seconds., DetailsLevel: INFO
+2026-06-17T11:45:50.3219914Z Site started.
+2026-06-17T11:45:50.3232722Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 06/17/2026 11:45:50 (UTC), DetailsLevel: INFO
+2026-06-17T11:46:10.4116251Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 10:49:47 (UTC), DetailsLevel: INFO
+2026-06-17T11:46:10.4119456Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 10:49:47 (UTC), DetailsLevel: INFO
+2026-06-17T11:46:10.4120956Z Container is terminating. Grace period: 5 seconds.
+2026-06-17T11:46:10.4197846Z Stop and delete container. Retry count = 0
+2026-06-17T11:46:10.4199917Z Stopping container: 613d8d24a6b4_app-aichatbot-prod-cin-001.
+2026-06-17T11:46:12.1288526Z Deleting container: 613d8d24a6b4_app-aichatbot-prod-cin-001. Retry count = 0
+2026-06-17T11:46:12.2050539Z Container spec TerminationMessagePolicy  path 
+2026-06-17T11:46:12.2052323Z Container is terminated. Total time elapsed: 1792 ms.
+2026-06-17T11:46:13.9238879Z Site: app-aichatbot-prod-cin-001 stopped.
+2026-06-17T11:47:17.1804269Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T11:47:18.2722068Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T11:47:23.4941008Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T11:47:23.4942824Z Container start method called.
+2026-06-17T11:47:23.4943455Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.4 for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T11:47:23.4945037Z Establishing network.
+2026-06-17T11:47:23.4973400Z Pulling image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.4.
+2026-06-17T11:47:27.9857719Z Container is starting.
+2026-06-17T11:47:27.9858618Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T11:47:27.9860032Z Establishing user namespace if not established already.
+2026-06-17T11:47:27.9863800Z Establishing network if not established already.
+2026-06-17T11:47:27.9870804Z Mounting volumes.
+2026-06-17T11:47:27.9872367Z Nested mountpoint 
+2026-06-17T11:47:27.9988647Z Nested mountpoint volatile/logs
+2026-06-17T11:47:28.0104935Z Nested mountpoint 
+2026-06-17T11:47:28.0112173Z Nested mountpoint 
+2026-06-17T11:47:28.0619142Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for app-aichatbot-prod-cin-001. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-17T11:47:28.0665800Z Creating container.
+2026-06-17T11:47:28.0822403Z Creating pipes for streaming container io.
+2026-06-17T11:47:28.0823732Z Creating stdout named pipe at /podr/container/pipe/12f476e1119b_app-aichatbot-prod-cin-001/stdout_5b5924b20b634634ade0ce25043f9936.
+2026-06-17T11:47:28.0833424Z Successfully created stdout named pipe at: /podr/container/pipe/12f476e1119b_app-aichatbot-prod-cin-001/stdout_5b5924b20b634634ade0ce25043f9936.
+2026-06-17T11:47:28.0844371Z Opening named pipe /podr/container/pipe/12f476e1119b_app-aichatbot-prod-cin-001/stdout_5b5924b20b634634ade0ce25043f9936 for reading in non-blocking mode.
+2026-06-17T11:47:28.0849951Z Successfully opened named pipe: /podr/container/pipe/12f476e1119b_app-aichatbot-prod-cin-001/stdout_5b5924b20b634634ade0ce25043f9936.
+2026-06-17T11:47:28.0851958Z Successfully removed non-blocking flag from /podr/container/pipe/12f476e1119b_app-aichatbot-prod-cin-001/stdout_5b5924b20b634634ade0ce25043f9936.
+2026-06-17T11:47:28.0856863Z Creating stderr named pipe at /podr/container/pipe/12f476e1119b_app-aichatbot-prod-cin-001/stderr_c19791e282914d5ca37d8f169a5fdf8a.
+2026-06-17T11:47:28.0859706Z Successfully created stderr named pipe at: /podr/container/pipe/12f476e1119b_app-aichatbot-prod-cin-001/stderr_c19791e282914d5ca37d8f169a5fdf8a.
+2026-06-17T11:47:28.0864996Z Opening named pipe /podr/container/pipe/12f476e1119b_app-aichatbot-prod-cin-001/stderr_c19791e282914d5ca37d8f169a5fdf8a for reading in non-blocking mode.
+2026-06-17T11:47:28.0867175Z Successfully opened named pipe: /podr/container/pipe/12f476e1119b_app-aichatbot-prod-cin-001/stderr_c19791e282914d5ca37d8f169a5fdf8a.
+2026-06-17T11:47:28.0869097Z Successfully removed non-blocking flag from /podr/container/pipe/12f476e1119b_app-aichatbot-prod-cin-001/stderr_c19791e282914d5ca37d8f169a5fdf8a.
+2026-06-17T11:47:28.0873792Z Overriding PORT environment variable with pre-calculated port: 8000.
+2026-06-17T11:47:28.0875585Z Setting value of PORT variable to 8000
+2026-06-17T11:47:28.0878004Z Creating container with image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.4 from registry: acraichatbotprodcin001.azurecr.io and fully qualified image name: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.4
+2026-06-17T11:47:28.4331921Z Starting container: 12f476e1119b_app-aichatbot-prod-cin-001.
+2026-06-17T11:47:28.4589165Z Starting watchers and probes.
+2026-06-17T11:47:28.4591866Z Starting metrics collection.
+2026-06-17T11:47:28.4593413Z Container is running.
+2026-06-17T11:47:28.4594552Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T11:47:28.4836802Z Container start method finished after 4988 ms.
+2026-06-17T11:47:28.4875897Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T11:47:28.4878345Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-17T11:47:31.5708815Z Site startup probe succeeded after 3.0826696 seconds.
+2026-06-17T11:47:31.7356880Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 3.0826696 seconds., DetailsLevel: INFO
+2026-06-17T11:47:31.8896322Z Site started.
+2026-06-17T11:47:31.8897586Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 06/17/2026 11:47:31 (UTC), DetailsLevel: INFO
+2026-06-17T11:47:52.0101674Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 11:45:50 (UTC), DetailsLevel: INFO
+2026-06-17T11:47:52.0106138Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 11:45:50 (UTC), DetailsLevel: INFO
+2026-06-17T11:47:52.0111994Z Container is terminating. Grace period: 5 seconds.
+2026-06-17T11:47:52.0140061Z Stop and delete container. Retry count = 0
+2026-06-17T11:47:52.0141976Z Stopping container: b37a35ca3c56_app-aichatbot-prod-cin-001.
+2026-06-17T11:47:53.6204237Z Deleting container: b37a35ca3c56_app-aichatbot-prod-cin-001. Retry count = 0
+2026-06-17T11:47:53.6883354Z Container spec TerminationMessagePolicy  path 
+2026-06-17T11:47:53.6885196Z Container is terminated. Total time elapsed: 1677 ms.
+2026-06-17T11:47:54.9308503Z Site: app-aichatbot-prod-cin-001 stopped.
+2026-06-17T11:52:42.1064899Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T11:52:43.1128811Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T11:52:48.8399020Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T11:52:48.8400348Z Container start method called.
+2026-06-17T11:52:48.8400694Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.4 for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T11:52:48.8401716Z Establishing network.
+2026-06-17T11:52:48.8402847Z Pulling image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.4.
+2026-06-17T11:52:53.2734150Z Container is starting.
+2026-06-17T11:52:53.2754686Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T11:52:53.2760008Z Establishing user namespace if not established already.
+2026-06-17T11:52:53.2761572Z Establishing network if not established already.
+2026-06-17T11:52:53.2762932Z Mounting volumes.
+2026-06-17T11:52:53.2767503Z Nested mountpoint 
+2026-06-17T11:52:53.3022887Z Nested mountpoint volatile/logs
+2026-06-17T11:52:53.3150717Z Nested mountpoint 
+2026-06-17T11:52:53.3189017Z Nested mountpoint 
+2026-06-17T11:52:53.3406583Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for app-aichatbot-prod-cin-001. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-17T11:52:53.3547154Z Creating container.
+2026-06-17T11:52:53.3549366Z Creating pipes for streaming container io.
+2026-06-17T11:52:53.3550700Z Creating stdout named pipe at /podr/container/pipe/0656ef50ef1c_app-aichatbot-prod-cin-001/stdout_1572c8422ab240cca68d4d9b278e331d.
+2026-06-17T11:52:53.3554098Z Successfully created stdout named pipe at: /podr/container/pipe/0656ef50ef1c_app-aichatbot-prod-cin-001/stdout_1572c8422ab240cca68d4d9b278e331d.
+2026-06-17T11:52:53.3555354Z Opening named pipe /podr/container/pipe/0656ef50ef1c_app-aichatbot-prod-cin-001/stdout_1572c8422ab240cca68d4d9b278e331d for reading in non-blocking mode.
+2026-06-17T11:52:53.3557008Z Successfully opened named pipe: /podr/container/pipe/0656ef50ef1c_app-aichatbot-prod-cin-001/stdout_1572c8422ab240cca68d4d9b278e331d.
+2026-06-17T11:52:53.3558311Z Successfully removed non-blocking flag from /podr/container/pipe/0656ef50ef1c_app-aichatbot-prod-cin-001/stdout_1572c8422ab240cca68d4d9b278e331d.
+2026-06-17T11:52:53.3560283Z Creating stderr named pipe at /podr/container/pipe/0656ef50ef1c_app-aichatbot-prod-cin-001/stderr_0b83fc024347428ba746d48e29c5c51c.
+2026-06-17T11:52:53.3562225Z Successfully created stderr named pipe at: /podr/container/pipe/0656ef50ef1c_app-aichatbot-prod-cin-001/stderr_0b83fc024347428ba746d48e29c5c51c.
+2026-06-17T11:52:53.3563574Z Opening named pipe /podr/container/pipe/0656ef50ef1c_app-aichatbot-prod-cin-001/stderr_0b83fc024347428ba746d48e29c5c51c for reading in non-blocking mode.
+2026-06-17T11:52:53.3606366Z Successfully opened named pipe: /podr/container/pipe/0656ef50ef1c_app-aichatbot-prod-cin-001/stderr_0b83fc024347428ba746d48e29c5c51c.
+2026-06-17T11:52:53.3608122Z Successfully removed non-blocking flag from /podr/container/pipe/0656ef50ef1c_app-aichatbot-prod-cin-001/stderr_0b83fc024347428ba746d48e29c5c51c.
+2026-06-17T11:52:53.3610068Z Overriding PORT environment variable with pre-calculated port: 8000.
+2026-06-17T11:52:53.3611283Z Setting value of PORT variable to 8000
+2026-06-17T11:52:53.3613835Z Creating container with image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.4 from registry: acraichatbotprodcin001.azurecr.io and fully qualified image name: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.4
+2026-06-17T11:52:53.6548555Z Starting container: 0656ef50ef1c_app-aichatbot-prod-cin-001.
+2026-06-17T11:52:53.6735178Z Starting watchers and probes.
+2026-06-17T11:52:53.6737667Z Starting metrics collection.
+2026-06-17T11:52:53.6748924Z Container is running.
+2026-06-17T11:52:53.6750071Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T11:52:53.6964655Z Container start method finished after 4850 ms.
+2026-06-17T11:52:53.6968241Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T11:52:53.6978527Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-17T11:52:56.7870214Z Site startup probe succeeded after 3.0888375 seconds.
+2026-06-17T11:52:56.8677501Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 3.0888375 seconds., DetailsLevel: INFO
+2026-06-17T11:52:57.0284492Z Site started.
+2026-06-17T11:52:57.0400332Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 06/17/2026 11:52:57 (UTC), DetailsLevel: INFO
+2026-06-17T11:53:17.1200420Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 11:47:31 (UTC), DetailsLevel: INFO
+2026-06-17T11:53:17.1205619Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 11:47:31 (UTC), DetailsLevel: INFO
+2026-06-17T11:53:17.1212043Z Container is terminating. Grace period: 5 seconds.
+2026-06-17T11:53:17.1252157Z Stop and delete container. Retry count = 0
+2026-06-17T11:53:17.1253470Z Stopping container: 12f476e1119b_app-aichatbot-prod-cin-001.
+2026-06-17T11:53:18.8617899Z Deleting container: 12f476e1119b_app-aichatbot-prod-cin-001. Retry count = 0
+2026-06-17T11:53:18.9299011Z Container spec TerminationMessagePolicy  path 
+2026-06-17T11:53:18.9327818Z Container is terminated. Total time elapsed: 1808 ms.
+2026-06-17T11:53:19.1484543Z Site: app-aichatbot-prod-cin-001 stopped.
+2026-06-17T11:53:47.1798210Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T11:53:48.6817713Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T11:54:09.5764447Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-06-17T11:54:09.5766801Z Container start method called.
+2026-06-17T11:54:09.5770411Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.4 for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T11:54:09.5777761Z Establishing network.
+2026-06-17T11:54:09.5781687Z Pulling image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.4.
+2026-06-17T11:54:14.4150245Z Container is starting.
+2026-06-17T11:54:14.4151034Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for app-aichatbot-prod-cin-001., DetailsLevel: INFO
+2026-06-17T11:54:14.4152254Z Establishing user namespace if not established already.
+2026-06-17T11:54:14.4153589Z Establishing network if not established already.
+2026-06-17T11:54:14.4154929Z Mounting volumes.
+2026-06-17T11:54:14.4156606Z Nested mountpoint 
+2026-06-17T11:54:14.4261228Z Nested mountpoint volatile/logs
+2026-06-17T11:54:14.4398851Z Nested mountpoint 
+2026-06-17T11:54:14.4622905Z Nested mountpoint 
+2026-06-17T11:54:14.5504740Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for app-aichatbot-prod-cin-001. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-06-17T11:54:14.5506154Z Creating container.
+2026-06-17T11:54:14.5516494Z Creating pipes for streaming container io.
+2026-06-17T11:54:14.5517853Z Creating stdout named pipe at /podr/container/pipe/bff28b334b17_app-aichatbot-prod-cin-001/stdout_a34ee7cde6a1461bbd9b8c45bf4872ef.
+2026-06-17T11:54:14.5531575Z Successfully created stdout named pipe at: /podr/container/pipe/bff28b334b17_app-aichatbot-prod-cin-001/stdout_a34ee7cde6a1461bbd9b8c45bf4872ef.
+2026-06-17T11:54:14.5532880Z Opening named pipe /podr/container/pipe/bff28b334b17_app-aichatbot-prod-cin-001/stdout_a34ee7cde6a1461bbd9b8c45bf4872ef for reading in non-blocking mode.
+2026-06-17T11:54:14.5534177Z Successfully opened named pipe: /podr/container/pipe/bff28b334b17_app-aichatbot-prod-cin-001/stdout_a34ee7cde6a1461bbd9b8c45bf4872ef.
+2026-06-17T11:54:14.5535495Z Successfully removed non-blocking flag from /podr/container/pipe/bff28b334b17_app-aichatbot-prod-cin-001/stdout_a34ee7cde6a1461bbd9b8c45bf4872ef.
+2026-06-17T11:54:14.5537291Z Creating stderr named pipe at /podr/container/pipe/bff28b334b17_app-aichatbot-prod-cin-001/stderr_422cbf1512974604bf7c51fe9e0be67f.
+2026-06-17T11:54:14.5539042Z Successfully created stderr named pipe at: /podr/container/pipe/bff28b334b17_app-aichatbot-prod-cin-001/stderr_422cbf1512974604bf7c51fe9e0be67f.
+2026-06-17T11:54:14.5540121Z Opening named pipe /podr/container/pipe/bff28b334b17_app-aichatbot-prod-cin-001/stderr_422cbf1512974604bf7c51fe9e0be67f for reading in non-blocking mode.
+2026-06-17T11:54:14.5541987Z Successfully opened named pipe: /podr/container/pipe/bff28b334b17_app-aichatbot-prod-cin-001/stderr_422cbf1512974604bf7c51fe9e0be67f.
+2026-06-17T11:54:14.5543253Z Successfully removed non-blocking flag from /podr/container/pipe/bff28b334b17_app-aichatbot-prod-cin-001/stderr_422cbf1512974604bf7c51fe9e0be67f.
+2026-06-17T11:54:14.5544557Z Overriding PORT environment variable with pre-calculated port: 8000.
+2026-06-17T11:54:14.5545820Z Setting value of PORT variable to 8000
+2026-06-17T11:54:14.5547783Z Creating container with image: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.4 from registry: acraichatbotprodcin001.azurecr.io and fully qualified image name: acraichatbotprodcin001.azurecr.io/usms-chatbot:1.0.4
+2026-06-17T11:54:14.8839380Z Starting container: bff28b334b17_app-aichatbot-prod-cin-001.
+2026-06-17T11:54:14.9399481Z Starting watchers and probes.
+2026-06-17T11:54:14.9401941Z Starting metrics collection.
+2026-06-17T11:54:14.9409433Z Container is running.
+2026-06-17T11:54:14.9411445Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T11:54:14.9711734Z Container start method finished after 5394 ms.
+2026-06-17T11:54:14.9719307Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-aichatbot-prod-cin-001 successfully created and is running., DetailsLevel: INFO
+2026-06-17T11:54:14.9720371Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-06-17T11:54:18.0688026Z Site startup probe succeeded after 3.0964031 seconds.
+2026-06-17T11:54:18.1408203Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 3.0964031 seconds., DetailsLevel: INFO
+2026-06-17T11:54:18.2386217Z Site started.
+2026-06-17T11:54:18.2387207Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 06/17/2026 11:54:18 (UTC), DetailsLevel: INFO
+2026-06-17T11:54:38.3331126Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 11:52:57 (UTC), DetailsLevel: INFO
+2026-06-17T11:54:38.3333365Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 06/17/2026 06:30:05, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site started at 06/17/2026 11:52:57 (UTC), DetailsLevel: INFO
+2026-06-17T11:54:38.3334716Z Container is terminating. Grace period: 5 seconds.
+2026-06-17T11:54:38.3374421Z Stop and delete container. Retry count = 0
+2026-06-17T11:54:38.3375708Z Stopping container: 0656ef50ef1c_app-aichatbot-prod-cin-001.
+2026-06-17T11:54:40.4255298Z Deleting container: 0656ef50ef1c_app-aichatbot-prod-cin-001. Retry count = 0
+2026-06-17T11:54:40.5263786Z Container spec TerminationMessagePolicy  path 
+2026-06-17T11:54:40.5265421Z Container is terminated. Total time elapsed: 2192 ms.
+2026-06-17T11:54:40.9164703Z Site: app-aichatbot-prod-cin-001 stopped.

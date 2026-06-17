@@ -83,6 +83,12 @@ variable "search_public_network_access_enabled" {
   default     = false
 }
 
+variable "manage_search_data_plane" {
+  description = "Manage Azure AI Search index, datasource, skillset, and indexer via local-exec. Enable only when Terraform runs from a network path allowed by the private Search service."
+  type        = bool
+  default     = false
+}
+
 variable "openai_public_network_access_enabled" {
   description = "Temporarily enable while Azure AI Search indexer calls the Azure OpenAI embedding deployment, then set false after private Search-to-OpenAI connectivity is in place."
   type        = bool

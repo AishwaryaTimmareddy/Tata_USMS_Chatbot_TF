@@ -10,6 +10,10 @@ variable "app_identity_id" { type = string }
 variable "app_identity_client_id" { type = string }
 variable "app_identity_principal_id" { type = string }
 variable "app_public_network_access_enabled" { type = bool }
+variable "admin_public_ip_ranges" {
+  type    = list(string)
+  default = []
+}
 variable "function_identity_id" { type = string }
 variable "function_identity_client_id" { type = string }
 variable "function_identity_principal_id" { type = string }
@@ -25,6 +29,7 @@ variable "document_storage_blob_endpoint" { type = string }
 variable "document_storage_queue_endpoint" { type = string }
 variable "search_endpoint" { type = string }
 variable "openai_endpoint" { type = string }
+variable "content_safety_endpoint" { type = string }
 variable "cosmos_endpoint" { type = string }
 variable "key_vault_uri" { type = string }
 variable "application_insights_connection_string" {

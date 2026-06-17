@@ -48,6 +48,10 @@ resource "azurerm_key_vault_secret" "jwt" {
   value        = random_password.jwt.result
   key_vault_id = azurerm_key_vault.this.id
   depends_on   = [azurerm_role_assignment.vault]
+
+  lifecycle {
+    ignore_changes = [value]
+  }
 }
 
 resource "azurerm_key_vault_secret" "bootstrap_admin" {
@@ -55,6 +59,10 @@ resource "azurerm_key_vault_secret" "bootstrap_admin" {
   value        = random_password.bootstrap_admin.result
   key_vault_id = azurerm_key_vault.this.id
   depends_on   = [azurerm_role_assignment.vault]
+
+  lifecycle {
+    ignore_changes = [value]
+  }
 }
 
 resource "azurerm_private_endpoint" "vault" {

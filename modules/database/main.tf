@@ -5,7 +5,7 @@ resource "azurerm_cosmosdb_account" "this" {
   offer_type                    = "Standard"
   kind                          = "GlobalDocumentDB"
   public_network_access_enabled = length(var.admin_public_ip_ranges) > 0
-  ip_range_filter              = var.admin_public_ip_ranges
+  ip_range_filter               = var.admin_public_ip_ranges
   free_tier_enabled             = false
   tags                          = var.tags
   consistency_policy {

@@ -70,6 +70,7 @@ module "ai" {
   embedding_model_version              = var.embedding_model_version
   embedding_deployment_capacity        = var.embedding_deployment_capacity
   search_public_network_access_enabled = var.search_public_network_access_enabled
+  manage_search_data_plane             = var.manage_search_data_plane
   openai_public_network_access_enabled = var.openai_public_network_access_enabled
   admin_public_ip_ranges               = var.admin_public_ip_ranges
   tags                                 = local.tags
@@ -106,6 +107,7 @@ module "compute" {
   app_identity_client_id                 = module.identity.app_identity_client_id
   app_identity_principal_id              = module.identity.app_identity_principal_id
   app_public_network_access_enabled      = var.app_public_network_access_enabled
+  admin_public_ip_ranges                 = var.admin_public_ip_ranges
   function_identity_id                   = module.identity.function_identity_id
   function_identity_client_id            = module.identity.function_identity_client_id
   function_identity_principal_id         = module.identity.function_identity_principal_id
@@ -118,6 +120,7 @@ module "compute" {
   document_storage_queue_endpoint        = module.storage.document_storage_queue_endpoint
   search_endpoint                        = module.ai.search_endpoint
   openai_endpoint                        = module.ai.openai_endpoint
+  content_safety_endpoint                = module.ai.content_safety_endpoint
   cosmos_endpoint                        = module.database.cosmos_endpoint
   key_vault_uri                          = module.security.key_vault_uri
   application_insights_connection_string = module.monitoring.application_insights_connection_string
@@ -136,7 +139,26 @@ module "monitoring" {
   resource_group_name = azurerm_resource_group.this["monitoring"].name
   alert_email_address = var.alert_email_address
   monthly_budget_inr  = var.monthly_budget_inr
-  tags                = local.tags
+  diagnostic_resource_ids = {
+    app_gateway    = module.compute.application_gateway_id
+    app_service    = module.compute.app_service_id
+    function_app   = module.compute.function_app_id
+    storage        = module.storage.document_storage_account_id
+    cosmos         = module.database.cosmos_account_id
+    search         = module.ai.search_service_id
+    openai         = module.ai.openai_account_id
+    content_safety = module.ai.content_safety_account_id
+    key_vault      = module.security.key_vault_id
+  }
+  alert_resource_ids = {
+    app_gateway  = module.compute.application_gateway_id
+    app_service  = module.compute.app_service_id
+    function_app = module.compute.function_app_id
+    storage      = module.storage.document_storage_account_id
+    cosmos       = module.database.cosmos_account_id
+    search       = module.ai.search_service_id
+  }
+  tags = local.tags
 }
 
 module "governance" {
