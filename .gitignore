@@ -7,3 +7,6 @@ terraform.tfvars
 crash.log
 *.tfvars*
 *tfplan*
+*logs*
+*manual*
+*.ps1
