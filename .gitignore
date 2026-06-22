@@ -10,3 +10,7 @@ crash.log
 *logs*
 *manual*
 *.ps1
+*.csv
+*.xlsx
+*docx*
+*test_plan*
