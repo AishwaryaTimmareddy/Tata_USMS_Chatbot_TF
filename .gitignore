@@ -14,3 +14,4 @@ crash.log
 *.xlsx
 *docx*
 *test_plan*
+*_extract/

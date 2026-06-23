@@ -4,3 +4,8 @@ output "application_insights_connection_string" {
   sensitive = true
 }
 output "action_group_id" { value = azurerm_monitor_action_group.this.id }
+output "chat_alert_rule_ids" {
+  value = {
+    for key, alert in azurerm_monitor_scheduled_query_rules_alert_v2.chat : key => alert.id
+  }
+}

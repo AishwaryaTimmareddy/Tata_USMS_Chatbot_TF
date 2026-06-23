@@ -152,6 +152,74 @@ resource "azurerm_monitor_metric_alert" "this" {
   }
 }
 
+locals {
+  chat_log_alerts = {
+    slow_response = {
+      description   = "A chatbot response exceeded the CRD target of 5 seconds."
+      email_subject = "CRITICAL: Saffron chatbot response exceeded 5 seconds"
+      query         = <<-QUERY
+        AppServiceHTTPLogs
+        | where CsMethod == "POST" and CsUriStem == "/api/chat"
+        | where TimeTaken > 5000
+        | project TimeGenerated, TimeTaken, CsMethod, CsUriStem, ScStatus, CsHost, CIp, _ResourceId
+      QUERY
+    }
+    model_no_response = {
+      description   = "A chatbot request failed because the application or an AI dependency did not return a successful response."
+      email_subject = "CRITICAL: Saffron chatbot or AI model request failed"
+      query         = <<-QUERY
+        AppServiceHTTPLogs
+        | where CsMethod == "POST" and CsUriStem == "/api/chat"
+        | where ScStatus in (408, 429, 500, 502, 503, 504)
+        | project TimeGenerated, TimeTaken, CsMethod, CsUriStem, ScStatus, CsHost, CIp, _ResourceId
+      QUERY
+    }
+  }
+}
+
+resource "azurerm_monitor_scheduled_query_rules_alert_v2" "chat" {
+  for_each = local.chat_log_alerts
+
+  name                = "alert-aichatbot-prod-chat-${replace(each.key, "_", "-")}-001"
+  resource_group_name = var.resource_group_name
+  location            = var.location
+
+  evaluation_frequency = "PT1M"
+  window_duration      = "PT5M"
+  scopes               = [azurerm_log_analytics_workspace.this.id]
+  severity             = 1
+  description          = each.value.description
+  display_name         = "Saffron chatbot ${replace(each.key, "_", " ")}"
+  enabled              = true
+
+  auto_mitigation_enabled = true
+  skip_query_validation   = false
+
+  criteria {
+    query                   = each.value.query
+    time_aggregation_method = "Count"
+    operator                = "GreaterThan"
+    threshold               = 0
+
+    failing_periods {
+      minimum_failing_periods_to_trigger_alert = 1
+      number_of_evaluation_periods             = 1
+    }
+  }
+
+  action {
+    action_groups = [azurerm_monitor_action_group.this.id]
+    email_subject = each.value.email_subject
+    custom_properties = {
+      application = "USMS Saffron Knowledge Assistant"
+      requirement = "CRD section 4.5"
+      runbook     = "Review AppServiceHTTPLogs in Log Analytics using the alert timestamp, path, status, and client IP."
+    }
+  }
+
+  tags = var.tags
+}
+
 resource "azurerm_consumption_budget_subscription" "this" {
   name            = "budget-aichatbot-prod-monthly"
   subscription_id = "/subscriptions/${var.subscription_id}"

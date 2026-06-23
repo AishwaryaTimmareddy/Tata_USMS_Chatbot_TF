@@ -140,6 +140,10 @@ resource "azurerm_linux_function_app" "this" {
     ENABLE_ORYX_BUILD                = "true"
     WEBSITE_CONTENTOVERVNET          = "1"
   }
+
+  lifecycle {
+    ignore_changes = [tags["hidden-link: /app-insights-resource-id"]]
+  }
 }
 
 locals {
