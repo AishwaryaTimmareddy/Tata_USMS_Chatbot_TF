@@ -270,9 +270,35 @@ locals {
         ]
       },
       {
+        "@odata.type"       = "#Microsoft.Skills.Text.PIIDetectionSkill"
+        name                = "mask-sensitive-content"
+        description         = "Mask personally identifiable information before embedding and indexing."
+        context             = "/document/pages/*"
+        defaultLanguageCode = "en"
+        minimumPrecision    = 0.5
+        maskingMode         = "replace"
+        maskingCharacter    = "*"
+        inputs = [
+          {
+            name   = "text"
+            source = "/document/pages/*"
+          }
+        ]
+        outputs = [
+          {
+            name       = "maskedText"
+            targetName = "maskedText"
+          },
+          {
+            name       = "piiEntities"
+            targetName = "piiEntities"
+          }
+        ]
+      },
+      {
         "@odata.type" = "#Microsoft.Skills.Text.AzureOpenAIEmbeddingSkill"
         name          = "embed-content"
-        description   = "Generate vectors using the production embedding deployment."
+        description   = "Generate vectors from masked content using the production embedding deployment."
         context       = "/document/pages/*"
         resourceUri   = trimsuffix(azurerm_cognitive_account.openai.endpoint, "/")
         deploymentId  = azurerm_cognitive_deployment.embedding.name
@@ -281,7 +307,7 @@ locals {
         inputs = [
           {
             name   = "text"
-            source = "/document/pages/*"
+            source = "/document/pages/*/maskedText"
           }
         ]
         outputs = [
@@ -301,7 +327,7 @@ locals {
           mappings = [
             {
               name   = "content"
-              source = "/document/pages/*"
+              source = "/document/pages/*/maskedText"
             },
             {
               name   = "contentVector"
