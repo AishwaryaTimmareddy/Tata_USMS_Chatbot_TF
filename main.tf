@@ -161,6 +161,23 @@ module "monitoring" {
   tags = local.tags
 }
 
+data "azurerm_client_config" "current" {}
+
+module "load_testing" {
+  source = "./modules/load_testing"
+
+  location               = var.location
+  resource_group_name    = azurerm_resource_group.this["monitoring"].name
+  operator_principal_ids = setunion(var.load_test_operator_object_ids, toset([data.azurerm_client_config.current.object_id]))
+  monitored_resource_ids = {
+    app_service          = module.compute.app_service_id
+    application_insights = module.monitoring.application_insights_id
+    search               = module.ai.search_service_id
+    openai               = module.ai.openai_account_id
+  }
+  tags = local.tags
+}
+
 module "governance" {
   source = "./modules/governance"
 

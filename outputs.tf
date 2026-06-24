@@ -26,6 +26,14 @@ output "key_vault_uri" {
   value = module.security.key_vault_uri
 }
 
+output "load_test_resource_name" {
+  value = module.load_testing.name
+}
+
+output "load_test_data_plane_uri" {
+  value = module.load_testing.data_plane_uri
+}
+
 output "bootstrap_admin_upn" {
   value = module.identity.bootstrap_admin_upn
 }

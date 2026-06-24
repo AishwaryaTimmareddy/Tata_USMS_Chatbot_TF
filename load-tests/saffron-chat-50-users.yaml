@@ -1,0 +1,84 @@
+version: v0.1
+testId: saffron-chat-50-users
+displayName: USMS Saffron Chat - 50 Users
+description: Fifty-user production chatbot performance validation
+testType: JMX
+testPlan: saffron-chat-50-users.jmx
+engineInstances: 1
+configurationFiles:
+  - saffron-questions.csv
+splitAllCSVs: false
+failureCriteria:
+  - p90(response_time_ms) > 5000
+  - avg(response_time_ms) > 5000
+  - percentage(error) > 5
+autoStop:
+  errorPercentage: 20
+  timeWindow: 60
+env:
+  - name: APP_HOST
+    value: 4.188.3.197
+  - name: APP_PROTOCOL
+    value: http
+referenceIdentities:
+  - kind: Metrics
+    type: SystemAssigned
+appComponents:
+  - resourceId: /subscriptions/c5f8a2a5-c92f-4daf-9151-078400953600/resourceGroups/rg-aichatbot-prod-cin-workload-001/providers/Microsoft.Web/sites/app-aichatbot-prod-cin-001
+    resourceName: app-aichatbot-prod-cin-001
+    kind: app
+    metrics:
+      - name: AverageResponseTime
+        namespace: Microsoft.Web/sites
+        aggregation: Average
+      - name: Http5xx
+        namespace: Microsoft.Web/sites
+        aggregation: Total
+      - name: CpuTime
+        namespace: Microsoft.Web/sites
+        aggregation: Total
+      - name: MemoryWorkingSet
+        namespace: Microsoft.Web/sites
+        aggregation: Average
+  - resourceId: /subscriptions/c5f8a2a5-c92f-4daf-9151-078400953600/resourceGroups/rg-aichatbot-prod-cin-monitoring-001/providers/Microsoft.Insights/components/appi-aichatbot-prod-cin-001
+    resourceName: appi-aichatbot-prod-cin-001
+    kind: web
+    metrics:
+      - name: requests/duration
+        namespace: microsoft.insights/components
+        aggregation: Average
+      - name: requests/count
+        namespace: microsoft.insights/components
+        aggregation: Count
+      - name: requests/failed
+        namespace: microsoft.insights/components
+        aggregation: Count
+  - resourceId: /subscriptions/c5f8a2a5-c92f-4daf-9151-078400953600/resourceGroups/rg-aichatbot-prod-cin-workload-001/providers/Microsoft.Search/searchServices/srch-aichatbot-prod-cin-001
+    resourceName: srch-aichatbot-prod-cin-001
+    kind: search
+    metrics:
+      - name: SearchLatency
+        namespace: Microsoft.Search/searchServices
+        aggregation: Average
+      - name: SearchQueriesPerSecond
+        namespace: Microsoft.Search/searchServices
+        aggregation: Average
+      - name: ThrottledSearchQueriesPercentage
+        namespace: Microsoft.Search/searchServices
+        aggregation: Average
+  - resourceId: /subscriptions/c5f8a2a5-c92f-4daf-9151-078400953600/resourceGroups/rg-aichatbot-prod-cin-workload-001/providers/Microsoft.CognitiveServices/accounts/oai-aichatbot-prod-eus-001
+    resourceName: oai-aichatbot-prod-eus-001
+    kind: openai
+    metrics:
+      - name: AzureOpenAIRequests
+        namespace: Microsoft.CognitiveServices/accounts
+        aggregation: Total
+      - name: Latency
+        namespace: Microsoft.CognitiveServices/accounts
+        aggregation: Average
+      - name: NormalizedTimeToFirstToken
+        namespace: Microsoft.CognitiveServices/accounts
+        aggregation: Average
+      - name: TotalTokens
+        namespace: Microsoft.CognitiveServices/accounts
+        aggregation: Total

@@ -125,6 +125,12 @@ variable "reader_object_ids" {
   default = []
 }
 
+variable "load_test_operator_object_ids" {
+  description = "Additional Entra object IDs allowed to create, configure, and run Azure Load Testing tests."
+  type        = set(string)
+  default     = []
+}
+
 variable "create_bootstrap_users" {
   description = "Create one Entra administrator and one Entra test user."
   type        = bool

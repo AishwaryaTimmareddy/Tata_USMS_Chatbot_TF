@@ -170,7 +170,7 @@ locals {
       query         = <<-QUERY
         AppServiceHTTPLogs
         | where CsMethod == "POST" and CsUriStem == "/api/chat"
-        | where ScStatus in (408, 429, 500, 502, 503, 504)
+        | where ScStatus in (408, 429, 499, 500, 502, 503, 504)
         | project TimeGenerated, TimeTaken, CsMethod, CsUriStem, ScStatus, CsHost, CIp, _ResourceId
       QUERY
     }
