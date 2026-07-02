@@ -534,6 +534,43 @@ resource "azapi_resource" "foundry_project" {
   }
 }
 
+# These connections were created through the Foundry portal and contain
+# credentials that must not be copied into Terraform. Read-only data resources
+# keep the linkage visible and make plans fail if either connection disappears.
+data "azapi_resource" "foundry_openai_connection" {
+  type                   = "Microsoft.CognitiveServices/accounts/projects/connections@2025-06-01"
+  name                   = var.foundry_openai_connection_name
+  parent_id              = azapi_resource.foundry_project.id
+  response_export_values = ["properties.category", "properties.target", "properties.authType"]
+}
+
+data "azapi_resource" "foundry_search_connection" {
+  type                   = "Microsoft.CognitiveServices/accounts/projects/connections@2025-06-01"
+  name                   = var.foundry_search_connection_name
+  parent_id              = azapi_resource.foundry_project.id
+  response_export_values = ["properties.category", "properties.target", "properties.authType"]
+}
+
+check "foundry_openai_connection" {
+  assert {
+    condition = (
+      data.azapi_resource.foundry_openai_connection.output.properties.category == "AzureOpenAI" &&
+      trimsuffix(data.azapi_resource.foundry_openai_connection.output.properties.target, "/") == trimsuffix(azurerm_cognitive_account.openai.endpoint, "/")
+    )
+    error_message = "The Foundry Azure OpenAI connection is missing or targets a different Azure OpenAI account."
+  }
+}
+
+check "foundry_search_connection" {
+  assert {
+    condition = (
+      data.azapi_resource.foundry_search_connection.output.properties.category == "CognitiveSearch" &&
+      trimsuffix(data.azapi_resource.foundry_search_connection.output.properties.target, "/") == "https://${azurerm_search_service.this.name}.search.windows.net"
+    )
+    error_message = "The Foundry Azure AI Search connection is missing or targets a different Search service."
+  }
+}
+
 locals {
   endpoints = {
     search         = { id = azurerm_search_service.this.id, service = "searchService", dns = "search" }

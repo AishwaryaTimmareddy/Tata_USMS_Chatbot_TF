@@ -30,6 +30,8 @@ variable "openai_public_network_access_enabled" {
   type    = bool
   default = false
 }
+variable "foundry_openai_connection_name" { type = string }
+variable "foundry_search_connection_name" { type = string }
 variable "admin_public_ip_ranges" {
   type    = list(string)
   default = []

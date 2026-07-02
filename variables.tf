@@ -95,6 +95,16 @@ variable "openai_public_network_access_enabled" {
   default     = false
 }
 
+variable "foundry_openai_connection_name" {
+  description = "Existing Azure OpenAI connection created in the Foundry project. Terraform verifies but does not manage its API-key credential."
+  type        = string
+}
+
+variable "foundry_search_connection_name" {
+  description = "Existing Azure AI Search connection created in the Foundry project. Terraform verifies but does not manage its API-key credential."
+  type        = string
+}
+
 variable "admin_public_ip_ranges" {
   description = "Temporary admin public IP allowlist for Azure Portal data-plane viewing. Keep empty for strict private-only backend access."
   type        = list(string)

@@ -6,3 +6,5 @@ output "content_safety_account_id" { value = azurerm_cognitive_account.content_s
 output "content_safety_endpoint" { value = azurerm_cognitive_account.content_safety.endpoint }
 output "search_index_name" { value = "usms-knowledge-index" }
 output "search_indexer_name" { value = "usms-knowledge-indexer" }
+output "foundry_openai_connection_id" { value = data.azapi_resource.foundry_openai_connection.id }
+output "foundry_search_connection_id" { value = data.azapi_resource.foundry_search_connection.id }

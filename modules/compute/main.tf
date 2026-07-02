@@ -13,6 +13,32 @@ locals {
     for ip_range in var.admin_public_ip_ranges :
     length(regexall("/", ip_range)) > 0 ? ip_range : "${ip_range}/32"
   ]
+
+  app_settings = {
+    APP_ENV                               = "production"
+    AZURE_CLIENT_ID                       = var.app_identity_client_id
+    WEBSITES_PORT                         = "8000"
+    WEBSITE_PULL_IMAGE_OVER_VNET          = "1"
+    AZURE_OPENAI_ENDPOINT                 = var.openai_endpoint
+    AZURE_OPENAI_CHAT_DEPLOYMENT          = "chat"
+    AZURE_OPENAI_EMBEDDING_DEPLOYMENT     = "embedding"
+    AZURE_CONTENT_SAFETY_ENDPOINT         = var.content_safety_endpoint
+    AZURE_SEARCH_ENDPOINT                 = var.search_endpoint
+    AZURE_SEARCH_INDEX_NAME               = "usms-knowledge-index"
+    AZURE_SEARCH_INDEXER_NAME             = "usms-knowledge-indexer"
+    AZURE_STORAGE_ACCOUNT_URL             = var.document_storage_account_url
+    AZURE_STORAGE_CONTAINER               = "knowledge"
+    AZURE_COSMOS_ENDPOINT                 = var.cosmos_endpoint
+    AZURE_COSMOS_DATABASE                 = "usms-chatbot"
+    AZURE_COSMOS_USERS_CONTAINER          = "users"
+    AZURE_COSMOS_CONVERSATIONS_CONTAINER  = "conversations"
+    AZURE_COSMOS_FEEDBACK_CONTAINER       = "feedback"
+    JWT_SECRET_KEY                        = "@Microsoft.KeyVault(SecretUri=${var.key_vault_uri}secrets/jwt-secret-key)"
+    BOOTSTRAP_ADMIN_USERNAME              = "saffronadmin"
+    BOOTSTRAP_ADMIN_EMAIL                 = "aichatbot-admin@usmssaffron.onmicrosoft.com"
+    BOOTSTRAP_ADMIN_PASSWORD              = "@Microsoft.KeyVault(SecretUri=${var.key_vault_uri}secrets/app-bootstrap-admin-password)"
+    APPLICATIONINSIGHTS_CONNECTION_STRING = var.application_insights_connection_string
+  }
 }
 
 resource "azurerm_service_plan" "app" {
@@ -64,34 +90,58 @@ resource "azurerm_linux_web_app" "this" {
     }
   }
 
-  app_settings = {
-    APP_ENV                               = "production"
-    AZURE_CLIENT_ID                       = var.app_identity_client_id
-    WEBSITES_PORT                         = "8000"
-    WEBSITE_PULL_IMAGE_OVER_VNET          = "1"
-    AZURE_OPENAI_ENDPOINT                 = var.openai_endpoint
-    AZURE_OPENAI_CHAT_DEPLOYMENT          = "chat"
-    AZURE_OPENAI_EMBEDDING_DEPLOYMENT     = "embedding"
-    AZURE_CONTENT_SAFETY_ENDPOINT         = var.content_safety_endpoint
-    AZURE_SEARCH_ENDPOINT                 = var.search_endpoint
-    AZURE_SEARCH_INDEX_NAME               = "usms-knowledge-index"
-    AZURE_SEARCH_INDEXER_NAME             = "usms-knowledge-indexer"
-    AZURE_STORAGE_ACCOUNT_URL             = var.document_storage_account_url
-    AZURE_STORAGE_CONTAINER               = "knowledge"
-    AZURE_COSMOS_ENDPOINT                 = var.cosmos_endpoint
-    AZURE_COSMOS_DATABASE                 = "usms-chatbot"
-    AZURE_COSMOS_USERS_CONTAINER          = "users"
-    AZURE_COSMOS_CONVERSATIONS_CONTAINER  = "conversations"
-    AZURE_COSMOS_FEEDBACK_CONTAINER       = "feedback"
-    JWT_SECRET_KEY                        = "@Microsoft.KeyVault(SecretUri=${var.key_vault_uri}secrets/jwt-secret-key)"
-    BOOTSTRAP_ADMIN_USERNAME              = "saffronadmin"
-    BOOTSTRAP_ADMIN_EMAIL                 = "aichatbot-admin@usmssaffron.onmicrosoft.com"
-    BOOTSTRAP_ADMIN_PASSWORD              = "@Microsoft.KeyVault(SecretUri=${var.key_vault_uri}secrets/app-bootstrap-admin-password)"
-    APPLICATIONINSIGHTS_CONNECTION_STRING = var.application_insights_connection_string
+  app_settings = local.app_settings
+
+  lifecycle {
+    # Release images are changed through the staging-slot runbook. Ignoring the
+    # image prevents a later Terraform apply from undoing a successful swap.
+    ignore_changes = [
+      tags["hidden-link: /app-insights-resource-id"],
+      site_config[0].application_stack[0].docker_image_name,
+    ]
+  }
+}
+
+resource "azurerm_linux_web_app_slot" "staging" {
+  name                                           = "staging"
+  app_service_id                                 = azurerm_linux_web_app.this.id
+  virtual_network_subnet_id                      = var.app_subnet_id
+  public_network_access_enabled                  = false
+  https_only                                     = true
+  ftp_publish_basic_authentication_enabled       = false
+  webdeploy_publish_basic_authentication_enabled = false
+  key_vault_reference_identity_id                = var.app_identity_id
+  vnet_image_pull_enabled                        = true
+  app_settings                                   = local.app_settings
+  tags                                           = var.tags
+
+  identity {
+    type         = "UserAssigned"
+    identity_ids = [var.app_identity_id]
+  }
+
+  site_config {
+    always_on                                     = true
+    ftps_state                                    = "Disabled"
+    minimum_tls_version                           = "1.2"
+    scm_use_main_ip_restriction                   = true
+    vnet_route_all_enabled                        = true
+    container_registry_use_managed_identity       = true
+    container_registry_managed_identity_client_id = var.app_identity_client_id
+    health_check_path                             = "/api/health"
+    health_check_eviction_time_in_min             = 5
+
+    application_stack {
+      docker_image_name   = var.container_image
+      docker_registry_url = "https://${azurerm_container_registry.this.login_server}"
+    }
   }
 
   lifecycle {
-    ignore_changes = [tags["hidden-link: /app-insights-resource-id"]]
+    ignore_changes = [
+      tags["hidden-link: /app-insights-resource-id"],
+      site_config[0].application_stack[0].docker_image_name,
+    ]
   }
 }
 
@@ -149,6 +199,7 @@ resource "azurerm_linux_function_app" "this" {
 locals {
   private_endpoints = {
     app      = { id = azurerm_linux_web_app.this.id, service = "sites", dns = "web" }
+    staging  = { id = azurerm_linux_web_app_slot.staging.app_service_id, service = "sites-staging", dns = "web" }
     function = { id = azurerm_linux_function_app.this.id, service = "sites", dns = "web" }
     acr      = { id = azurerm_container_registry.this.id, service = "registry", dns = "acr" }
   }

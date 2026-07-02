@@ -6,6 +6,10 @@ output "app_service_hostname" {
   value = module.compute.app_service_hostname
 }
 
+output "app_service_staging_hostname" {
+  value = module.compute.app_service_staging_hostname
+}
+
 output "acr_login_server" {
   value = module.compute.acr_login_server
 }
@@ -16,6 +20,14 @@ output "search_endpoint" {
 
 output "openai_endpoint" {
   value = module.ai.openai_endpoint
+}
+
+output "foundry_openai_connection_id" {
+  value = module.ai.foundry_openai_connection_id
+}
+
+output "foundry_search_connection_id" {
+  value = module.ai.foundry_search_connection_id
 }
 
 output "cosmos_endpoint" {

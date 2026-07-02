@@ -72,6 +72,8 @@ module "ai" {
   search_public_network_access_enabled = var.search_public_network_access_enabled
   manage_search_data_plane             = var.manage_search_data_plane
   openai_public_network_access_enabled = var.openai_public_network_access_enabled
+  foundry_openai_connection_name       = var.foundry_openai_connection_name
+  foundry_search_connection_name       = var.foundry_search_connection_name
   admin_public_ip_ranges               = var.admin_public_ip_ranges
   tags                                 = local.tags
 }
